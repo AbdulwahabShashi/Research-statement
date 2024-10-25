@@ -1,0 +1,84 @@
+\documentclass[./main.tex]{subfiles}
+
+\begin{document}
+
+\section{Introduction}
+Stuff to mention 
+\begin{itemize}
+    \item QFT
+    \item Mathematical Physics
+    \item Millinium problem
+    \item Research in singular SPDEs
+    \item Understanding of different problems within
+    \item Literature here and there
+\end{itemize}
+\section{PhD Research Overview}
+PhD Thesis title: 
+\begin{itemize}
+    \item Rough Connections
+    \item Rough Uhlenbeck compactness on compact surfaces
+    \item  Towards Two-dimensional Rough Gauge Theory and Application to Yang-Mills theory
+    \item Rough connections, Rough Uhlenbeck Compactness, and application to 2D Yang-Mills measure 
+\end{itemize}
+
+%\subsection{PhD research projects}
+\subsection{State space for two-dimensional Higgs field and String observables}
+In this mini-project we define a state space for the Higgs field $\Phi$ for which string observables are well-defined. We will also show that the string observables can be used to separate the gauge orbits for the Higgs field. 
+
+The context of this mini-project is somewhere in between the two papers \cite{CCHS_2D_YM} and \cite{CCHS_3D_YMH}. While \cite{CCHS_2D_YM} was about stochastic quantisation for the 2D Yang-Mills measure, \cite{CCHS_3D_YMH} was about the stochastic quantisation for the 3D Yang-Mills-Higgs measure. We consider the 2D Yang-Mills-Higgs and all results mentioned could be seen as a word of word translation of the results for the connection 1-forms $A$ to the Higgs fields $\Phi$. In fact, we believe that this mini-project could fit in an hypothetically extended version of \cite{CCHS_2D_YM}.  
+
+However, it turns out even though the state space for the Higgs field is similar, the place of the Wilson loops and holonomies is taken by the string observable. We consider double parameterised curves $\gamma$ of the form $\gamma(s,t)=x+s(v+tw)$ for some vectors $x,v,w\in \R^2$, and we want to make sense of
+$$S(A,\Phi,\gamma)=\int^1_0 \hol(A,\gamma_t)\Phi(\gamma_t(1))\,\diff t,$$
+where $A$ is the line integral of a connection 1-form along lines and $\hol(A,\gamma_t)$ is the holonomy of such $A$. It is shown in \cite{CCHS_2D_YM} that the holonomy for quite irregular objects is well-defined by means of Young integration. 
+
+We want to apply this in the context of the stochastic quantisation of the Yang-Mills-Higgs in 2D. It turns out that the object $\Phi$ in question is quite irregular, in fact it is not even a function, it is a distribution. As a consequence the point evaluation $\Phi(\gamma_t(1))$ is not well-defined. Fortunately, the issue can be remedied through a very similar construction as in \cite{CCHS_2D_YM} which was done for integrated 1-form $A$.  Indeed, we write
+$$S(A,\Phi,\gamma)=\int^1_0 \hol(A,\gamma_t)\,\diff\left( \int^\cdot_0 \Phi(\gamma_s(1))\,\diff s\right)(t),$$
+and we exploit Young integration by constructing a space for which the line integral of such $\Phi$ is well-defined. 
+
+After we define the string observable $S$ for a suitable chosen domain, we show that it serves as a separating object for the gauge transformation. We show a statement of the following type:
+$$g(x)S(A,\Phi,\gamma)=S(A^g,\bar\Phi,\gamma), \  \ \ \text{ for all doubly affine }\gamma,$$
+then $\bar\Phi=\Phi^g$. 
+
+Finally, we generalise the results from Section 3.6 in \cite{CCHS_2D_YM} slightly. We obtain conditions to ensure a suitable quotient space $X/\mathfrak G$ is a Polish space for a Banach space $X$ and topological group $\mathfrak G$. 
+
+
+\subsection{Rough Uhlenbeck compactness on the unit square}
+This is a joint work in progress with Ilya Chevyrev (UoE) and Tom Klose (UoO). In this work we generalise the works Chevyrev 2019 using continuum PDE techniques inspired by the works Uhlenbeck 19??. First we solve for Coulomb gauge $\diff^*A=0$ on smaller squares, and then patch the solutions in each small square together to obtain a globally defined connection form. The latter is very similar to what was also done in Uhlenbeck \red{19??}. Our techniques differs in the sense that we solve for the Coulomb gauge directly, instead of using implicit existence results. 
+
+Classically, the result is essentially under smallness assumptions, one can find a gauge transformation such that 
+\[
+\|A^g\|_{W^{1,p}}\lesssim \|F^A\|_{L^p}.
+\]
+In the setting of 2D Yang-Mills theory, the curvature has the same regularity as white noise which makes the $L^p$-norm not applicable. Furthermore, generally Besov norms of the curvature is not gauge invariant, whereas $L^p$-norms are. Instead, we consider so-called Lasso fields, which are somehow related to the curvature. These are gauge invariant up to a trivial action $G$. 
+
+The distribution of the lasso fields $L^A$ for the 2D YM measure on the square is explicit, namely same as white noise. The lasso fields relate to axial gauge representations $\bar A$, in the sense that 
+\[
+\bar A=\int L^A. 
+\]
+In our work we consider norms for the axial gauge representative. 
+
+We first develop the theory of rough additive functions. This generalises the notion of additive functions \red{Ref??}. The definition of additive functions to rough additive functions, is how Young integration is to rough integration. There is a natural notion for gauge transformations for such rough additive functions inspired by controlled rough paths. Then our Uhlenbeck compactness boils down whether one can transform a rough additive funciton in the axial gauge to the Coulom gauge. 
+
+The latter yields a singular SPDE. We wish to solve for $g$ such that $\diff^*A^g=0$. Recall that $A^g=\Ad_gA-\diff gg^{-1}=\Ad_gA+0^g$. We set up a system of SPDEs for essentially $\Ad_g$ and $0^g$. As the bound, that we want to prove, does not care about the way we solve for these equations, or whether we solve any equation, this causes a freedom. We use the equations carefully as well with boundary conditions. We use the theory of regularity structures to solve it. However, there is so many adaptations that we have to do from the classical black box theory. 
+
+
+Firstly, our equation is elliptic. While this per se not that problematic, we have boundary conditions, which cause technical issues which breaks down the theory of regularity structures. This leads us to come up with an smartly chosen auxiliary modelled distribution.  Secondly, we construct the model from a rough additive function (as well as the auxiliary modelled distribution). This requires a heavy machinary as it is a highly non-trivial task. We introduce, suitable sectors for regularity structure and enhanced Picard iteration which preserves these sectors. This is a sophisticated step which uses a ``cosmetic" Da Prato-Debussche trick together with shifting of indices.   The construction of model goes via integration identities, derivative identities and symmetry.  
+
+Afterwards, we patch the solutions in small squares together to obtain a global solution. This yields a pathwise rough Uhlenbeck compactness theorem which is neater as well as more natural. Without the additional work, or if we were to lean towwards using the black box theory, we would have a more probabilistic statement. Instead, currently, the probabilistic argument  is only used in constructing a suitable version of rough additive functions for the Yang-Mills measure. 
+
+
+\subsection{Rough Uhlenbeck compacntess on closed surfaces}
+
+\subsection{State space for 2D Yang-Mills via Dirac operators}
+
+\subsection{Exploring Challenging Problems}
+
+
+\section{Current Research Interests}
+
+\section{Future Research Directions}
+
+\subsection{Revisiting Unsolved Problems}
+\section{Broader Impact and Applications}
+
+\end{document}

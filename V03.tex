@@ -1,0 +1,37 @@
+\documentclass[./main.tex]{subfiles}
+
+\begin{document}
+
+\textbf{Notations:}
+\begin{itemize}
+    \item  RUC=Rough Uhlenbeck compactness
+    \item RP=Rough path
+    \item RAF=Rough additive functions
+\end{itemize}
+
+
+\section{P1: A PDE construction of the 2D Yang-Mills measure in $\bS^2$}
+In here we try to reproduce the works by Sengupta where he constructs the YM measure for $\bS^2$. My impression is that he mainly relies on holonomies while we could take an Ansatz  with a suitably conditioned  $1$-form in an axial-type gauge. One thing that is mentioned is the determinant of the change of variables formula to go to the axial gauge is the identity in the case of $\Lambda=[0,1]^2$, but in here is what? Also the conditioning is slightly unclear on how to condition first on the equator and then how to go from there. 
+
+Why there might be hope to consider such approach is that we have the ability/maths to make sense of many objects analytically, e.g.\ (rough) additive functions etc. From there onwards we proceed with a suitable gauge fixing to the Coulomb gauge. 
+
+My guess is that finding a suitable conditioned axial gauge is tricky? Otherwise, why no one said anything on the level of the $1$-forms previously in the literature or am I missing something? (obviously working with holonomies is easier) So, as we start with an Ansatz that does not rely on holonomies, we initiate approaches that work on the $1$-forms themselves. This could genuinely be a PDE construction of the YM measure on $\bS^2$. 
+
+
+\section{P2: Rough Uhlenbeck compactness on Riemannian manifolds}
+We essentially do everything we did in the current paper for a compact manifold. We impose that for a suitable cover $(U_i)_{i=1,...,n}$ with ``disks" /``squares" we have bounded lassos on each set $U_i$. We carry out the results we currently have and then do patching. As one knows, or rather assuming one knows, enough information about the wilson loops and can integrate holonomy over loops with each other plus a rough path lift for these holonomies, then one can find the axial gauge representative. The latter allows us to carry out our current program.  
+
+The only reason this might be interesting is that I will learn more about differential geometry and gauge theory. 
+
+
+\section{P5: Pathwise global existence for 2D YM Langevin dynamics}
+With either our current approach or with a different gauge invariant quantity we use RUC to prove global existence of 2D YM Langevin dynamic. 
+
+The current approach, say on the torus would require us to cover the torus with 2 (or maybe 4) squares and find axial gauge representative on each square. Holonomy loops where one can integrate the loop against each other plus a RP lift is more or less equivalent to finding an axial gauge. Finding axial gauge is equivalent to working with lasso fields which is painful work. 
+
+However, one might consider different gauge invariant quantities. If we want to do this, as fun as it sounds, we first need to reprove RUC with different techniques. The more I think about it though, maybe the lasso fields are not that natural. At least, my opinion is that from a pathwise perspective, the lasso fields may not seem as natural as the curvature. 
+
+
+\end{document}
+
+
