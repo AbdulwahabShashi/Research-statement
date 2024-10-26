@@ -65,11 +65,15 @@ The latter yields a singular SPDE. We wish to solve for $g$ such that $\diff^*A^
 Firstly, our equation is elliptic. While this per se not that problematic, we have boundary conditions, which cause technical issues which breaks down the theory of regularity structures. This leads us to come up with an smartly chosen auxiliary modelled distribution.  Secondly, we construct the model from a rough additive function (as well as the auxiliary modelled distribution). This requires a heavy machinary as it is a highly non-trivial task. We introduce, suitable sectors for regularity structure and enhanced Picard iteration which preserves these sectors. This is a sophisticated step which uses a ``cosmetic" Da Prato-Debussche trick together with shifting of indices.   The construction of model goes via integration identities, derivative identities and symmetry.  
 
 Afterwards, we patch the solutions in small squares together to obtain a global solution. This yields a pathwise rough Uhlenbeck compactness theorem which is neater as well as more natural. Without the additional work, or if we were to lean towwards using the black box theory, we would have a more probabilistic statement. Instead, currently, the probabilistic argument  is only used in constructing a suitable version of rough additive functions for the Yang-Mills measure. 
+%
+\subsection{Rough Uhlenbeck compactness on closed surfaces}
+This project is essentially doing the same project, but instead consider a generic closed surface $M$ as underlying manifold. The principal bundle is still assumed to be trivial. As in the classical setting, the main work is showing existence of Coulomb gauge on a (small) Euclidean ball, which in our setting corresponds to small Euclidean square. By suitable mapping charts to squares, and suitable controlling of metric, one gets the rough Uhlenbeck compactness. 
 
-
-\subsection{Rough Uhlenbeck compacntess on closed surfaces}
-
+In the generic manfiold setting, the application to Yang-Mills is slightly non-trivial. The measure does not have as nice statistical properties as the unit square setting, where the lasso field, or essentially the curvature, was white noise. We use suitable cover of the domain as well as suitable approximation of the axial gauge in each chart together with conditional Yang-Mills measure. 
+%
 \subsection{State space for 2D Yang-Mills via Dirac operators}
+%
+Let $G\subset U(N)$ be a compact Lie group. Let us consider a trivial principal $G$-bundle with base manifold $\bT^2$. We can consider an associated vector bundle via a representation $G\to \operatorname{GL}(\C^N)$. It is known that connection forms $A$ can be viewed as a covariant derivative on a suitable associated vector bundle. In this project, we study properties of the space of connection forms via using covariant derivative $\diff_A$, or rather more precisely, the operator  $\mathrm{D}_A:=\diff_A\oplus\diff_A^*$ acting on the exterior algebra $\Omega=\bigoplus_{k=0}^ 2\Omega^k$. 
 
 \subsection{Exploring Challenging Problems}
 
