@@ -1,0 +1,36 @@
+\documentclass[./Research_statement.tex]{subfiles}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{} % Clear all header and footer fields
+%\fancyhead[L]{Expected PhD Completion Date: Month, Year} 
+\pagenumbering{gobble}
+
+\begin{document}
+\vspace*{-2cm}
+\noindent \textbf{Expected Completion PhD Date:} 07/2025
+\vspace{0.75cm}
+\medskip 
+
+
+\noindent \textbf{(A1)} Two works I'd like to highlight are rough Uhlenbeck compactness and rough covariant derivatives.  
+
+\vspace{2pt}
+
+\noindent \textbf{Rough Uhlenbeck compactness.}  
+I extended Uhlenbeck compactness for 2D base manifolds, adapting it to connection forms of distributional regularity. This regularity aligns with the 2D Yang-Mills measure, resulting in a gauge fixing procedure for the measure. This work, done with A and B, considers the unit square $\Lambda=[0,1]^2$. 
+
+Let \( G \) be a compact Lie group with a trivial principal \( G \)-bundle over \( \Lambda \). Classical Uhlenbeck compactness uses the \( W^{1,p} \)-norm for connection forms \( A \) and the \( L^p \)-norm for curvature \( F^A = \mathrm{d}A + [A \wedge A] \). Our result replaces \( L^p \) norms with a tailored “rough” norm, \(\vertiii{A}\), suited to handle \( F^A \in C^{-1^-} \), where standard norms fail. Previous work by A led us to use rough additive functions, representing distributional 1-forms with rough-path-like structure, allowing gauge transformations \( A^g \) to be defined with a norm relation \( |F^A|_{C^{-1-\kappa}} \lesssim \vertiii{A} \) and \( |A^g|_{C^{-\kappa}} \lesssim \vertiii{A} \).
+
+Inspired by classical Coulomb gauge conditions, we defined \( A^g \) satisfying \( \mathrm{d}^* A^g = 0 \) over a smaller square \( \Lambda^\sigma \). Solving this SPDE with regularity structures posed challenges in handling boundary conditions and singularities. I developed a structured map—preserving symmetry via an “index” shift and Da-Prato Debussche trick—yielding a Banach space fixed point solution, which enables us to define complex singular objects \( Z \) from \(\vertiii{A}\) alone. This required innovations in convolution identities, boundary treatments, and rough paths, culminating in a generalization of Uhlenbeck patching to the \( C^{-\kappa} \) setting.
+
+\vspace{2pt}
+
+\noindent \textbf{Rough Covariant derivative.}  
+With the same base setting, I shifted focus to properties of \( A \) via its covariant derivative \( \mathrm{d}_A = \mathrm{d} + A \wedge \). Working with A and C, we studied \( \rmD_A := \mathrm{d}_A \oplus \mathrm{d}_A^* \) as an unbounded operator on \( L^2 \) forms, aiming to equate \( \rmD_A \) and \( A \) in rough settings. Through paracontrolled calculus, we characterized the domain of the resolvent in \( L^p \) and introduced gauge-invariant observables that fully describe gauge orbits. Notably, we proved that the 2D Yang-Mills Langevin dynamics reside in a Polish space using only the Hölder-Besov norm of \( A \), improving upon previous, stricter norm requirements.
+
+\vspace{2pt}
+
+\noindent \textbf{Broader context.}  
+These studies leverage recent SPDE techniques, regularity structures, and rough paths, integrating advances from probability theory, PDEs, and functional analysis. My focus is on quantum gauge theory, extending smooth structures to rough settings via SPDE approaches, enhancing our understanding of Yang-Mills(-Higgs) theory.
+
+\end{document}

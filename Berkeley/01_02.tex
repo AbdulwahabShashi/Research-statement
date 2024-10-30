@@ -1,0 +1,59 @@
+\documentclass[./Research_statement.tex]{subfiles}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{} % Clear all header and footer fields
+%\fancyhead[L]{Expected PhD Completion Date: Month, Year} 
+\newcommand{\bfOmega}{\boldsymbol{\Omega}}
+\newcommand{\bA}{\mathbb A}
+\newcommand{\bfA}{\mathbf{A}}
+\pagenumbering{gobble}
+
+\begin{document}
+\vspace*{-2cm}
+\noindent \textbf{Expected Completion PhD Date:} 07/2025
+\vspace{0.75cm}
+\medskip 
+
+\noindent \textbf{(A1)} Two works I’d like to highlight are rough Uhlenbeck compactness and rough covariant derivative.
+
+\vspace{2pt}
+
+\noindent \textbf{Rough Uhlenbeck Compactness.}\ 
+%
+Let $\Lambda=[0,1]^2$ and $G$ be a compact Lie group and consider a trivial principal $G$-bundle over $\Lambda$.  
+This work, jointly with X and Y, extends Uhlenbeck's [1982] for two dimensional base manifold $\Lambda$ with connection forms of distributional regularity. The regularity coincides with the regularity that can be sampled from the 2D Yang-Mills measure resulting in a gauge fixing procedure for the measure, morally from a $C^{-1/2^-}$ 1-form to a $C^{0^-}$ 1-form.  
+
+%\textbf{Norms}
+
+Classical Uhlenbeck compactness uses the spaces $W^{1,p}$ (resp.\ $L^p$) for the connection form $A$ (resp.\ for its curvature $F^A$). In the setting of Yang-Mills, one essentially has $F^A\in C^{-1^-}$ which renders the space $L^p$ inapplicable. We defined a (distributional) space $\bfOmega$ consisting of $\bfA=(A,\bA)$, where $A$ is an integrated 1-form and  $\bA$ its ``rough path" enhancement. Morally, $\bfOmega\subset C^{-1/2-\kappa}$.  I have studied properties of this space with the theory of rough paths and extended the notion of gauge transformation via controlled rough path theory. 
+
+%\textbf{Coulomb condition + Boundary + identification}
+We got inspired from the classical theory and to any $\bfA\in\bfOmega$,  we try to find $B$ gauge equivalent to $A$ such that $\diff^*B=0$ over a small square $\Lambda^\sigma=[0,\sigma]^2$. From there, I have derived a suitable system of singular SPDEs with non-trivial boundary conditions which is then solved with regularity structures (modulo adaptations). 
+
+%\textbf{Regularity structures + Picard iteration}
+
+The singular SPDE yields singular objects 
+that one needs to make sense of. I have managed to define the singular objects from $\bfA\in\bfOmega$. This is surprising, as the singular objects are not only more numerous but also qualitatively distinct from the information contained in $\bfA=(A,\bA)$.
+
+This task is challenging and it requires solution spaces  with certain symmetries. I came up with a sophisticated map that preserves the symmetries (via ``index" shift and splitting/Da-Prato Debussche trick). We find a fixed point of this map via Banach fixed point theorem. Without those symmetries, there could be an even larger set of singular objects which we cannot define from $\bfA$. 
+%
+To actually define the singular objects from $\bfA$, I derived analytic identities relating convolution of Green function with line integrals (and iterated line integrals), derivative and integration identities, rough paths techniques, as well as systematic way of treating singular objects. 
+
+Finally, I have showed regularity for $B$, slightly stronger than $C^{-\kappa}$. Afterwards, one needs to glue solutions from smaller squares to obtain a global connection form on $\Lambda$. I generalized the gluing technique from Uhlenbeck's [1982] to the distributional setting (morally $C^{-\kappa}$ connection forms). 
+
+\vspace{2pt}
+
+\noindent \textbf{Rough Covariant Derivative.}\ 
+%
+With the same base setting, I shifted focus to properties of $A\in C^{-\kappa}$ via its covariant derivative $\diff A = \diff + A\wedge $. Jointly working with X and Z, we study $\rmD_A:=\diff_A\oplus\diff_A^*$ as an unbounded operator on the $L^p$  space of differential forms for $p>1$.  The main goal is to have an equivalence of $\rmD_A$ and $A$ extending extending classical geometry concepts to rough geometry. I have defined a suitable domain via paracontrolled calculus, showed useful properties of the resolvent in $L^p$, and using spectral theory, I introduced gauge-invariant observables that fully describe gauge orbits. Notably, we proved that the 2D Yang-Mills Langevin dynamics reside in a Polish space using only the H\"older-Besov norm of A, improving upon previous, stricter norm requirements from the literature.
+
+\vspace{2pt}
+
+\noindent \textbf{Broader Context.}\ 
+%
+%These works use the theory of singular SPDEs as regulartiy structures and rough paths with interesting twists that are new showing that it is really \textit{recent}. There is also interplay with probability theory, PDEs as well as functional analysis. My research interest is in quantum gauge theory and would like to use SPDE techniques to extend smooth structures to rough  structures. This yields a better understanding of Yang-Mills(-Higgs) theory.
+%
+These works apply the theory of singular SPDEs, incorporating regularity structures and rough paths with novel, distinctive elements that mark them as genuinely \textit{recent} developments. They also feature rich interactions with probability theory, PDEs, and functional analysis. My research interest lies in quantum gauge theory, and I aim to use SPDE techniques to extend smooth structures to rough settings, enhancing our understanding of Yang-Mills-Higgs theory. 
+%
+
+\end{document}
