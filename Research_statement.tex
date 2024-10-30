@@ -230,8 +230,24 @@ Even though, the (non-Abelian) 3D Yang-Mills measure is not constructed yet, it 
 Using the Dirac operator approach, we hope to have an alternative approach. As we have seen in \orange{Sec?}, we were able to prove Polishness of the quotient space by merely using resolvent analysis. While such approach does not naturally carry over, I hope it is still worth exploring its boundaries. In fact, one difficulty is that the connection form in 3D is expected to be of regularity $C^{-1/2^-}$ which makes the definition of $\rmD_A$ really a singular operator in the sense that the resolvent equation is a singular (S)PDE. Luckily, this by itself will not cause issues as we know how to solve it. The issue is that the gauge transformation also require additional structure. This structure is not clear yet. On the other hand the gauge transformation on covariant derivative is $g\rmD_Ag^{-1}$ which as an operator makes sense without too much regularity on $g$. For example, on $L^2$, we can simply take $g:\bT^2\to G$ measurable. We do not exclude that for the gauge transformation one might need the theory of rough additive functions. It is likely that combining these two approaches will maximise the gain. 
 
 \subsection{Covariant GFF and constructing conditional Higgs measure}
+With Dr.\ Ajay Chandra, we are planning to study conditional Higgs measure, by first studying a covariant GFF. That is, for a given (rough) $A$, we would like to study the Gibbs-type measure
+\[
+\mu_A(\diff\Phi)=\frac 1 {Z_A} \exp\left( -\int_{\bT^2}|\diff_A\Phi(x)|^2+c_A|\Phi(x)|^2\diff x\right)\diff\Phi. 
+\]
+Of course, the way it is written, this measure is ill-defined. This measure is representing a Gaussian free field with covariance kernel given by the Green function for $(\diff_A^*\diff_A+c_A)$. There are several ideas that one could try: study the measure via the covariant Laplacian, Dirichlet form or through the Feyman-Kac formulation of the covariance kernel. 
+
+We first try to construct this measure in the Abelian case and later extend it to non-Abelian setting. The way to rigorously construct this measure is by first taking a mollified $A^\varepsilon\to A$ and consider the measure $\mu_{A^\varepsilon}$. In the application we have in mind $A$ is essentially Gaussian free field. In this specific setting, we expect to need to take $c_{A^\varepsilon}\to-\infty$ as a renomralisation (indeed, this can be seen by writing the covariant Laplacian in coordinates). 
+
+Studying of the covariant Laplacian requires to set up a suitable domain and studying the spectral properties. This is very similar to what I have worked on in \orange{Ref??} (but the operators considered are similar but also different). It usually common to alternatively study the Dirichlet form corresponding to the Laplacian. In our setting, it would be 
+\[
+\mathcal E_A(\varphi,\psi)=(\diff_A\varphi,\diff_A\psi)+c_A(\varphi,\psi).
+\]
+The issue that could arise is that this operator is non-degenerate as we are going to take $c_A< 0$. 
+
+The last approach is relying on the works by \orange{REF??} and study integrals of the form $\int A(B_t)\cdot\diff B_t$ for the connection form $A$, say $\operatorname{div} A=0$ to make this integral coincide with Stratonovich. This integral is not well-defined via Ito-calculus, but one might wonder whether there is a procedure combining rough paths and stochastic sewing to make sense of this integral. This allows to define stochastic parallel transport which is needed for the formula of the Gaussian free field. The number $c_A$ should somehow appear in the formulas and that could save the day. 
 
 
+%On the level of the operator $(\diff_{A^\varepsilon}^*\diff_{A^\varepsilon}+c_{A^\varepsilon})$ it somehow corresponds to moving the spectrum downwards. Indeed, once one expands the covariant Laplacian a term $A^2$ appears which, morally, is shifting the spectrum upwards, so the hope is to ``renoramlise'' it by shifting it downwards with $c_A$.  operator
 
 %\subsection{Construction (covariant) Gaussian free field via conditioning on submanifolds}
 %Or generally understanding how the Higgs field reacts to patching procedures... 
@@ -241,8 +257,10 @@ Using the Dirac operator approach, we hope to have an alternative approach. As w
 
 \subsection{Alternative proof for Uhlenbeck compactness}
 
-Natural quantities, ... Langevin dynamic for example, from Dirac operators?, also helpful for 3D if one finds a suitable way, global existence for pure 2D YM etc, we use the structure of 2D, Broux-Otto-Steele techniques, or only Otto-et al ``energy'' technique
+%Natural quantities, ... Langevin dynamic for example, from Dirac operators?, also helpful for 3D if one finds a suitable way, global existence for pure 2D YM etc, we use the structure of 2D, Broux-Otto-Steele techniques, or only Otto-et al ``energy'' technique
 
+
+Alternative proof for Uhlenbeck compactness is not for the sake of the insane amount of possibilies to reporve the same result. Instead it will have several benefits. 
 
 \subsection{Exploring rough Calderon problems}
 
