@@ -255,17 +255,33 @@ The last approach is relying on the works by \orange{REF??} and study integrals 
 
 %\subsection{Global existence for non-Abelian YMH}
 
-\subsection{Alternative proof for Uhlenbeck compactness}
+\subsection{Alternative proof for rough Uhlenbeck compactness in 2D}
 
 %Natural quantities, ... Langevin dynamic for example, from Dirac operators?, also helpful for 3D if one finds a suitable way, global existence for pure 2D YM etc, we use the structure of 2D, Broux-Otto-Steele techniques, or only Otto-et al ``energy'' technique
 
 
-Alternative proof for Uhlenbeck compactness is not for the sake of the insane amount of possibilies to reporve the same result. Instead it will have several benefits. 
+%Alternative proof for rough Uhlenbeck compactness is not for the sake of the insane amount of possibilies to reporve the same result. It will teach us more on  singular SPDEs techniques,  rough differential geometry,and gauge invariant quantities.
+
+The motivation for developing an alternative proof of rough Uhlenbeck compactness is not merely to replicate the result through numerous methods. Instead, this enhances our understanding of singular SPDE techniques, rough differential geometry, and gauge-invariant quantities. For example, one could try to prove using techniques relying on implicit function theorem as classically done in \orange{REf??} which is not currently available for singular SPDEs (even though there is someone working on such thing \orange{???}). In fact, in the work mentioned in \orange{REf?}, we developed many interesting techniques to arrive to the result. 
+
+The gauge-invaraint observable that we use is unfortunately not easily applicable for the Langevin dynamic. Changing the observable to a different quantity and reporving the same result could be more natural for the Langevin dynamic. One example could be the $L^p$-norm of the curvature smoothed by the Yang-Mills heat flow with some blow-up controlled suitably in the time parameter. Another one could be spectral quantities that can be obtained from Dirac operator $\rmD_A$, for example trace of the heat kernel. 
+
+Further benefits for tweaking the result to accommodate the 2D Langeivn dynamic is that it could initiate proving pathwise global existence of the orbits under the dynamic as well as global existence for the non-Abelian Yang-Mills-Higgs. Furthermore,  it could enhance our understanding of the 3D Yang-Mills measure. For instance, the result that we currently have in \orange{Ref?} using the axial gauge relation to lasso field which is very special property of 2 dimensions (in fact, we know even on $\bT^2$, we do not have such relation).  
+
 
 \subsection{Exploring rough Calderon problems}
+This is a more exploratory project. Calderon type problems, or inverse problem already arises in the study of the operator $\rmD_A=\diff_A\oplus\diff_A^*$ from \orange{Ref??}. One could try to obtain information of $A$ by studying $\rmD_A$, as well as stability results, i.e.\ some kind of continuity of the map $\rmD_A\mapsto A$. There is many results for operators of the form $\Delta+\zeta$ as well as recently for covariant Laplacian $\diff_A^*\diff_A$ and characterising up to gauge transformation \orange{REf??}. These questions are not precisely the same as the one I have mentioned, but it regardless poses the question: what happens when $\zeta$ is a 2D white noise, or $A$ is Gaussian free field on $\mathbb T^2$? Of course, there are issues: firstly the corresponding equations require singular SPDE technique, secondly boundary conditions, specifically, the Dirichlet-to-Neumann map, might require special effort to be understood. 
+
+
+
+
 
 %\subsection{Regularity structures incorporating initial data issues}
 %Also what about spatial boundaries? These could also cause similar issues, how to handle? We have a similar situation in RUC. 
+
+
+
+
 
 
 
@@ -280,7 +296,7 @@ Alternative proof for Uhlenbeck compactness is not for the sake of the insane am
  
 
 
-\section{Broader Impact and Applications}
+%\section{Broader Impact and Applications}
 
 
 \end{document}
