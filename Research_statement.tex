@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[small]{titlesec}
 \usepackage{fullpage}
@@ -89,6 +89,7 @@
 
 \newcommand{\rmD}{\mathrm{D}}
 
+\newcommand{\fG}{\mathfrak{G}}
 
 \newcommand{\bC}{\mathbb C}
 \newcommand{\T}{\mathbb T}
@@ -186,11 +187,10 @@ Firstly, our equation is elliptic. While this per se not that problematic, we ha
 
 Afterwards, we patch the solutions in small squares together to obtain a global solution. This yields a pathwise rough Uhlenbeck compactness theorem which is neater as well as more natural. Without the additional work, or if we were to lean towwards using the black box theory, we would have a more probabilistic statement. Instead, currently, the probabilistic argument  is only used in constructing a suitable version of rough additive functions for the Yang-Mills measure. 
 %
-\subsection{Rough Uhlenbeck compactness on closed surfaces}
-This project is essentially doing the same project, but instead consider a generic closed surface $M$ as underlying manifold. The principal bundle is still assumed to be trivial. As in the classical setting, the main work is showing existence of Coulomb gauge on a (small) Euclidean ball, which in our setting corresponds to small Euclidean square. By suitable mapping charts to squares, and suitable controlling of metric, one gets the rough Uhlenbeck compactness. 
 
-In the generic manfiold setting, the application to Yang-Mills is slightly non-trivial. The measure does not have as nice statistical properties as the unit square setting, where the lasso field, or essentially the curvature, was white noise. We use suitable cover of the domain as well as suitable approximation of the axial gauge in each chart together with conditional Yang-Mills measure. 
-%
+
+
+
 \subsection{State space for 2D Yang-Mills via Dirac operators}
 %
 \textit{This is joint work with Ilya Chevyrev (UoE) and Massimiliano Gubinelli (UoO).} 
@@ -201,47 +201,64 @@ In the generic manfiold setting, the application to Yang-Mills is slightly non-t
 
 For a Banach space $X$ of functions we denote by $\Omega X$ the space of differential forms constitued by functions in $X$. We view the operator $\rmD_A$ as an unbounded operator on $\Omega L^2$. We define a suitable domain for $\rmD_A$ to make it a closed, self-adjoint operator with compact resolvent. We can show that the spectrum consists of discrete set eigenvalues with finite multiplicities. We can use suitable resolvent estimates and expansions to show that the orbit space $\Omega C^{\alpha-1}/\mathfrak G^\alpha$ is Polish.
 
-Furthermore, we can establish a natural gauge invariant observables via spectral properties  in the case of $G=U(N)$.  
+Furthermore, we can establish a natural gauge invariant observables via spectral properties  in the case of $G=U(N)$ and recover gauge transformations via these observables in this case.  
 
-\subsection{Exploring Challenging Problems}
-\subsubsection{Defining lasso fields}
-\subsubsection{State space for 3D Yang-Mills}
 
 
 \section{Future Research Directions}
-General explanation, functional analysis, probability interaction, spdes, pdes, finding more structures, generalising ideas, global existence 
+In the future, I am planning to extend the results of my PhD thesis to more sophisticated settings. Broadly speaking, I am always open to explore directions in rough analysis that are not necessarily mentioned in this list. 
 
-\subsection{Alternative quantities for Uhlenbeck compactness}
+%The general problems I would like to work on are those in intersection of SPDEs, rough analysis, functional analysis and geometry. 
 
-Natural quantities, ... Langevin dynamic for example
+%General explanation, functional analysis, probability interaction, spdes, pdes, finding more structures, generalising ideas, global existence 
+
+\subsection{Rough Uhlenbeck compactness on closed surfaces}
+%
+This project builds on the rough Uhlenbeck compactness in my PhD thesis, extending them to a generic closed smooth surface $M$ as the base manifold of the trivial principal $G$-bundle. I have been developing this in parallel, with the possibility of including preliminary findings in my thesis.
+%
+%This project is generalising the previous work Rough Uhlenbeck in my PhD thesis, but instead consider a generic closed smooth surface $M$ as base manifold. I have been working on this in parallel and it could possibly appear in my PhD thesis.
+%
+
+As in the classical setting, the main work involves proving the existence of the Coulomb gauge on a small Euclidean ball; in our setting, however, it suffices to consider a small Euclidean square. We need to generalise the metric of connection forms we have to use. The idea is to consider a suitably graph of the manifold and consider the supremum of the metric on each face (as the faces are homeomorphic to squares). We have to make sure that each face of the graph is small enough (in fact smaller than the injectivity radius). On each face, we use the techniques developed in the PhD thesis. We consider a further a subgraph on each face. Each subfaces is then mapped to a Euclidean square on which we have the smallness assumptions to find a Coulomb gauge as done in the rough Uhlenbeck compactness on the unit square. 
+
+The main difficulty in applying this to Yang-Mills theory lies in the fact that, unlike the square case, the lasso field—or effectively, the curvature—does not behave as white noise. Instead, we work with a conditional measure on the initial graph of the manifold. On each face, we introduce a lasso field and derive bounds based on the conditional measure, which, while not strictly Gaussian, possesses comparable Gaussian bounds.
+%
+\subsection{State space for 3D Yang-Mills via Dirac operators}
+%
+Even though, the (non-Abelian) 3D Yang-Mills measure is not constructed yet, it is very relevant to study a potential space where the measure is supported on. In fact, to construct the measure via the stochastic quantisation, it is crucial to have a state space, e.g.\ Polish, to hope that one has nice (Markovian) properties and possibly invariant measure for which it converges to. One needs to somehow obtain a gauge group $\fG$ that acts on the possible state space $\cS$ that the dynamic takes values in. This gauge group is likely be depending on the element $s\in\cS$, which gives it likely a fibre bundle structure. There is a candidate space in \cite{CCHS3D} which is lacking a gauge group $\fG$. There is an equivalence relation, resembling classical gauge equivalence, defined by means of the Yang-Mills heat flow. This approach could poissbly be developed further by incorporating on one hand rough line integration, i.e.\ rough additive functions, from rough Uhlenbeck compactness and on the other hand the covariant derivative from \orange{REf??}. Even though, incorporating rough additive functions is something my advisor Ilya and I have tried during my PhD, we realised there is ``more structure'' that we somehow were missing. 
+
+Using the Dirac operator approach, we hope to have an alternative approach. As we have seen in \orange{Sec?}, we were able to prove Polishness of the quotient space by merely using resolvent analysis. While such approach does not naturally carry over, I hope it is still worth exploring its boundaries. In fact, one difficulty is that the connection form in 3D is expected to be of regularity $C^{-1/2^-}$ which makes the definition of $\rmD_A$ really a singular operator in the sense that the resolvent equation is a singular (S)PDE. Luckily, this by itself will not cause issues as we know how to solve it. The issue is that the gauge transformation also require additional structure. This structure is not clear yet. On the other hand the gauge transformation on covariant derivative is $g\rmD_Ag^{-1}$ which as an operator makes sense without too much regularity on $g$. For example, on $L^2$, we can simply take $g:\bT^2\to G$ measurable. We do not exclude that for the gauge transformation one might need the theory of rough additive functions. It is likely that combining these two approaches will maximise the gain. 
 
 \subsection{Covariant GFF and constructing conditional Higgs measure}
 
 
 
-\subsection{Construction (covariant) Gaussian free field via conditioning on submanifolds}
-Or generally understanding how the Higgs field reacts to patching procedures... 
+%\subsection{Construction (covariant) Gaussian free field via conditioning on submanifolds}
+%Or generally understanding how the Higgs field reacts to patching procedures... 
 
 
-\subsection{Global existence for non-Abelian YMH}
+%\subsection{Global existence for non-Abelian YMH}
 
-\subsection{Regularity structures incorporating initial data issues}
-Also what about spatial boundaries? These could also cause similar issues, how to handle? We have a similar situation in RUC. 
+\subsection{Alternative proof for Uhlenbeck compactness}
 
-\subsection{Proving Uhlenbeck compactness with Broux-Otto-Steele techniques}
+Natural quantities, ... Langevin dynamic for example, from Dirac operators?, also helpful for 3D if one finds a suitable way, global existence for pure 2D YM etc, we use the structure of 2D, Broux-Otto-Steele techniques, or only Otto-et al ``energy'' technique
 
 
-\subsection{Provind RUC in 3D}
-Finding suitable quantities might be very very difficult! 
+\subsection{Exploring rough Calderon problems}
 
-\subsection{Revisiting Unsolved Problems}
-During the first period of my PhD I have worked on several interesting problems that did not go anywhere. There are two of them which I want to revisit. 
+%\subsection{Regularity structures incorporating initial data issues}
+%Also what about spatial boundaries? These could also cause similar issues, how to handle? We have a similar situation in RUC. 
 
-Lasso fields played an important role in RUC. One could ask whether lasso fields are well-defined as distribution for elements in $C^{0^-}$ (namely the same regularity as GFF). For instance, it is not clear for the YM Langevin dynamic whether there is a way of making sense of the lasso fields in a pathwise manner. The question here, whether one can find a topology for which the GFF lives in, and one can canonically define the lasso field. What we know from pathwise techniques, is that one should aim to find an expansion in terms of stochastic objects, think of modelled distributions or germs. The issue that we have previously faced was that the expansion of the lasso field has functions of the lasso field in the expansion. Alternatively, one can write an equation in terms of two dimensional rough integration where the ``noise'' depends on the solution. Of course this is a bad sign. 
 
-The new idea is to really use the fact that one already knows the lasso field in the smooth setting. One could hope for the smooth approximation to converge via smallness assumptions of the equantities involved. 
 
-Another interesting problem is finding a state space for 3D YM langevin dynamic which is Polish. This problem will be revisited via covariant derivative techniques. The covariant derivative has a distribution connection form which requires singular SPDE techniques (this is similar to what have been done in \red{??}). The holonomies which were used to bound gauge transformations, now it is bounded by resolvent techniques. Of course, one could combine both these techniques to gain maximal result.
+%\subsection{Revisiting Unsolved Problems}
+%During the first period of my PhD I have worked on several interesting problems that did not go anywhere. There are two of them which I want to revisit. 
+
+%Lasso fields played an important role in RUC. One could ask whether lasso fields are well-defined as distribution for elements in $C^{0^-}$ (namely the same regularity as GFF). For instance, it is not clear for the YM Langevin dynamic whether there is a way of making sense of the lasso fields in a pathwise manner. The question here, whether one can find a topology for which the GFF lives in, and one can canonically define the lasso field. What we know from pathwise techniques, is that one should aim to find an expansion in terms of stochastic objects, think of modelled distributions or germs. The issue that we have previously faced was that the expansion of the lasso field has functions of the lasso field in the expansion. Alternatively, one can write an equation in terms of two dimensional rough integration where the ``noise'' depends on the solution. Of course this is a bad sign. 
+
+%The new idea is to really use the fact that one already knows the lasso field in the smooth setting. One could hope for the smooth approximation to converge via smallness assumptions of the equantities involved. 
+
+
  
 
 
