@@ -1,5 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1730301079.56185 "c:/Users/s2229503/OneDrive - University of Edinburgh/University of Edinburgh/PhD/Research-statement/Research_statement.tex" "Research_statement.pdf" "Research_statement" 1730301084.63491 0
+["bibtex Research_statement"] 1730368023.36998 "Research_statement.aux" "Research_statement.bbl" "Research_statement" 1730368030.71952 0
+  "./references.bib" 1729837878 994 7e7b31074d3527f5710dc0eb8f21e640 ""
+  "C:/Users/s2229503/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
+  "Research_statement.aux" 1730368028 2062 b4ab5d27080b469599245de195f65039 "pdflatex"
+  (generated)
+  "Research_statement.bbl"
+  "Research_statement.blg"
+  (rewritten before read)
+["pdflatex"] 1730368024.52056 "c:/Users/s2229503/OneDrive - University of Edinburgh/University of Edinburgh/PhD/Research-statement/Research_statement.tex" "Research_statement.pdf" "Research_statement" 1730368030.72116 0
   "C:/Users/s2229503/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1729862389 158187 1d40a4baa29ddf5d05bb4bf6080924d9 ""
   "C:/Users/s2229503/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1729862330 14064 86c186f604ee0d1b37f026737d534da5 ""
   "C:/Users/s2229503/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1729862391 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -169,10 +177,11 @@
   "C:/Users/s2229503/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/s2229503/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/s2229503/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Research_statement.aux" 1730301083 1964 81fa869a1d8cd56bde19839e9d90b87d "pdflatex"
-  "Research_statement.out" 1730301083 3041 7a1d7e3a834d0fa009d57376ea41fdda "pdflatex"
-  "Research_statement.tex" 1730301077 24883 a2aa89c60fe128e21ad95e041d00411f ""
-  "c:/Users/s2229503/OneDrive - University of Edinburgh/University of Edinburgh/PhD/Research-statement/Research_statement.tex" 1730301077 24883 a2aa89c60fe128e21ad95e041d00411f ""
+  "Research_statement.aux" 1730368028 2062 b4ab5d27080b469599245de195f65039 "pdflatex"
+  "Research_statement.bbl" 1730368024 250 1cb84e7e0147f6a00e306ff3f40914bc "bibtex Research_statement"
+  "Research_statement.out" 1730368028 3041 7a1d7e3a834d0fa009d57376ea41fdda "pdflatex"
+  "Research_statement.tex" 1730367703 24959 60572983ca26f1c01a883c1bb243f52f ""
+  "c:/Users/s2229503/OneDrive - University of Edinburgh/University of Edinburgh/PhD/Research-statement/Research_statement.tex" 1730367703 24959 60572983ca26f1c01a883c1bb243f52f ""
   (generated)
   "Research_statement.aux"
   "Research_statement.log"

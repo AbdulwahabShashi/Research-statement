@@ -287,6 +287,9 @@ INPUT C:\Users\s2229503\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\
 INPUT C:\Users\s2229503\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT C:\Users\s2229503\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm7.tfm
 INPUT C:\Users\s2229503\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT .\Research_statement.bbl
+INPUT .\Research_statement.bbl
+INPUT Research_statement.bbl
 INPUT Research_statement.aux
 INPUT .\Research_statement.out
 INPUT .\Research_statement.out
