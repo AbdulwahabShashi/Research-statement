@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.12)  31 OCT 2024 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.12)  1 NOV 2024 14:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,20 +587,24 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 120
  (C:\Users\abdu1\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+LaTeX Font Info:    Trying to load font information for U+euf on input line 127.
+ (C:\Users\abdu1\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
 
-LaTeX Warning: Citation `CCHS_2D_YM' on page 1 undefined on input line 145.
-
-
-LaTeX Warning: Citation `CCHS_3D_YMH' on page 1 undefined on input line 145.
-
-
-LaTeX Warning: Citation `CCHS_2D_YM' on page 1 undefined on input line 145.
+LaTeX Warning: Citation `Driver89' on page 1 undefined on input line 133.
 
 
-LaTeX Warning: Citation `CCHS_3D_YMH' on page 1 undefined on input line 145.
+LaTeX Warning: Citation `GKS89' on page 1 undefined on input line 133.
 
 
-LaTeX Warning: Citation `CCHS_2D_YM' on page 1 undefined on input line 145.
+LaTeX Warning: Citation `Driver89' on page 1 undefined on input line 133.
+
+
+LaTeX Warning: Citation `Sengupta97' on page 1 undefined on input line 133.
+
+
+LaTeX Warning: Citation `Levy03' on page 1 undefined on input line 133.
 
 
 
@@ -608,32 +612,86 @@ LaTeX Warning: Citation `CCHS_2D_YM' on page 1 undefined on input line 145.
 
 {C:/Users/abdu1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Citation `CCHS_2D_YM' on page 2 undefined on input line 149.
+LaTeX Warning: Citation `Chevyrev19' on page 2 undefined on input line 135.
 
 
-LaTeX Warning: Citation `CCHS_2D_YM' on page 2 undefined on input line 151.
+LaTeX Warning: Citation `Chevyrev19' on page 2 undefined on input line 135.
 
 
-LaTeX Warning: Citation `CCHS_2D_YM' on page 2 undefined on input line 159.
+LaTeX Warning: Citation `CCHS2d' on page 2 undefined on input line 135.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 159.
-(C:\Users\abdu1\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
+
+LaTeX Warning: Citation `CCHS3d' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `CH23' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `BC23' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `BC24' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `Hairer14' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `GIP15' on page 2 undefined on input line 135.
+
+
+LaTeX Warning: Citation `Uhlenbeck82' on page 2 undefined on input line 159.
+
+
+LaTeX Warning: Citation `Uhlenbeck82' on page 2 undefined on input line 159.
+
+
 
 [2]
+
+LaTeX Warning: Citation `Chevyrev19' on page 3 undefined on input line 173.
+
+
+LaTeX Warning: Citation `CCHS2d' on page 3 undefined on input line 173.
+
+
 
 [3]
 
 [4]
 
-LaTeX Warning: Citation `CCHS3D' on page 5 undefined on input line 228.
+LaTeX Warning: Citation `CCHS3d' on page 5 undefined on input line 220.
+
+
+LaTeX Warning: Citation `SP24' on page 5 undefined on input line 229.
 
 
 
 [5]
 
-[6] (Research_statement.bbl)
+LaTeX Warning: Citation `SP24' on page 6 undefined on input line 239.
+
+
+LaTeX Warning: Citation `Uhlenbeck82' on page 6 undefined on input line 257.
+
+
+
+[6]
+
+LaTeX Warning: Citation `Hairer14' on page 7 undefined on input line 269.
+
+
+LaTeX Warning: Citation `CCHS3d' on page 7 undefined on input line 269.
+
+
+LaTeX Warning: Citation `CM24' on page 7 undefined on input line 269.
+
+
+LaTeX Warning: Citation `CH16' on page 7 undefined on input line 271.
+
+
+LaTeX Warning: Citation `Cekic20' on page 7 undefined on input line 274.
+
+(Research_statement.bbl)
 
 [7] (Research_statement.aux)
  ***********
@@ -645,20 +703,20 @@ L3 programming layer <2024-07-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Research_statement.out' has not changed.
-(rerunfilecheck)             Checksum: 7A1D7E3A834D0FA009D57376EA41FDDA;3041.
+(rerunfilecheck)             Checksum: 9582EDE0C01C467A40CE9ADF37F8C20D;2992.
  ) 
 Here is how much of TeX's memory you used:
- 25006 strings out of 473898
- 488787 string characters out of 5726479
- 1936960 words of memory out of 5000000
- 47457 multiletter control sequences out of 15000+600000
- 568608 words of font info for 79 fonts, out of 8000000 for 9000
+ 25008 strings out of 473898
+ 488781 string characters out of 5726479
+ 1937960 words of memory out of 5000000
+ 47460 multiletter control sequences out of 15000+600000
+ 568271 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,6n,101p,1396b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\abdu1\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Research_statement.pdf (7 pages, 209825 bytes).
+ 98i,6n,101p,1401b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/abdu1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Research_statement.pdf (7 pages, 214124 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 181 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
