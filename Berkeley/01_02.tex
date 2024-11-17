@@ -3,9 +3,9 @@
 %\pagestyle{fancy}
 %\fancyhf{} % Clear all header and footer fields
 %\fancyhead[L]{Expected PhD Completion Date: Month, Year} 
-\newcommand{\bfOmega}{\boldsymbol{\Omega}}
-\newcommand{\bA}{\mathbb A}
-\newcommand{\bfA}{\mathbf{A}}
+%\newcommand{\bfOmega}{\boldsymbol{\Omega}}
+%\newcommand{\bA}{\mathbb A}
+%\newcommand{\bfA}{\mathbf{A}}
 %\pagenumbering{gobble}
 
 \begin{document}
@@ -25,32 +25,32 @@ This work, jointly with X and Y, extends Uhlenbeck's [1982] for two dimensional 
 
 %\textbf{Norms}
 
-Classical Uhlenbeck compactness uses the spaces $W^{1,p}$ (resp.\ $L^p$) for the connection form $A$ (resp.\ for its curvature $F^A$). In the setting of Yang-Mills, one essentially has $F^A\in C^{-1^-}$ which renders the space $L^p$ inapplicable. I defined a (distributional) space $\bfOmega$ consisting of $\bfA=(A,\bA)$, where $A$ is an integrated 1-form and  $\bA$ its ``rough path" enhancement. 
+Classical Uhlenbeck compactness uses the spaces $W^{1,p}$ (resp.\ $L^p$) for the connection form $A$ (resp.\ for its curvature $F^A$). In the setting of Yang-Mills, one essentially has $F^A\in C^{-1^-}$ which makes the space $L^p$ inapplicable. I defined a (distributional) space $\bfOmega$ consisting of $\bfA=(A,\bA)$, where $A$ is an integrated 1-form and  $\bA$ its ``rough path" enhancement. 
 %
 %Smooth $1$-forms are in $\bfOmega$, $A$ is simply the line integral and $\bA$ the line integral against itself. 
 %
 This is novel and natural as line integration of 1-forms is a natural operation and $\bfOmega$ is a level-2 rough path extension of it. 
 %
-One has morally $C^\infty\subset \bfOmega\subset C^{-1/2-\kappa}$ and that $\bfOmega$ has a natural notion of gauge transformation. 
+One has morally $C^\infty\subset \bfOmega\subset C^{-1/2-}$ and that $\bfOmega$ has a natural notion of gauge transformation. 
 %have studied properties of this space with the theory of rough paths and extended the notion of gauge transformation via controlled rough path theory. 
 
 %\textbf{Coulomb condition + Boundary + identification}
-We got inspired from the classical theory and to any $\bfA\in\bfOmega$,  we try to find $B$ gauge equivalent to $A$ such that $\diff^*B=0$ over a small square $\Lambda^\sigma=[0,\sigma]^2$. From there, I have derived a suitable system of singular SPDEs with non-trivial boundary conditions which I then solved with regularity structures (modulo adaptations). 
+We got inspired by Uhlenbeck's [1982] and to any $\bfA\in\bfOmega$,  we try to find $B$ gauge equivalent to $A$ such that $\diff^*B=0$ over a small square $\Lambda^\sigma=[0,\sigma]^2$. From there, I have derived a suitable system of singular SPDEs with non-trivial boundary conditions which I then solved with regularity structures (modulo adaptations). 
 %
 %\textbf{Regularity structures + Picard iteration}
 %
 The singular SPDE yields singular objects 
-that one needs to make sense of for which normally one would use probabilistic bounds. I have managed to define the singular objects from $\bfA\in\bfOmega$ pathwise. This is surprising, as the singular objects are not only more numerous but also qualitatively distinct from the information contained in the much simpler, geometrically more natural, quantity $\bfA=(A,\bA)$.  This task is challenging and it is highly non-standard in regularity structure. For example, it requires solution spaces  with certain symmetries, which leads to adaptations to the usual fixed point map to preserve these symmetries. Without those symmetries, there could be an even larger set of singular objects which we cannot define from $\bfA$. 
+that one needs to make sense of for which normally one would use probabilistic bounds. I have managed to define the singular objects from $\bfA\in\bfOmega$ pathwise. This is surprising, as the singular objects are not only more numerous but also qualitatively distinct from the information contained in the much simpler, geometrically more natural, quantity $\bfA=(A,\bA)$.  This task is challenging and it is highly non-standard in regularity structures. For example, it requires solution spaces  with certain symmetries, which leads to adaptations to the usual fixed point map to preserve these symmetries. Without those symmetries, there could be an even larger set of singular objects which we cannot define from $\bfA$. 
 %
-To actually define the singular objects from $\bfA$, I derived analytic identities relating convolution of Green function with line integrals (and iterated line integrals), derivative and integration identities, rough paths techniques, as well as systematic way of treating the singular objects. 
+To actually define the singular objects from $\bfA$, I derived analytic identities relating convolution of Green function with line integrals (and iterated line integrals), derivative and integration identities. I also invented  a systematic framework for treating these singular objects. 
 
-Finally, I have shown regularity for $B$, slightly stronger than $C^{-\kappa}$. Afterwards, one needs to glue solutions from smaller squares to obtain a global connection form on $\Lambda$. I generalized the gluing technique from Uhlenbeck's [1982] to the distributional setting (morally $C^{-\kappa}$ connection forms). 
+Finally, I have shown regularity for $B$, slightly stronger than $C^{0^-}$. Afterwards, one needs to glue solutions from smaller squares to obtain a global connection form on $\Lambda$. I generalized the gluing technique from Uhlenbeck's [1982] to the distributional setting (morally $C^{0^-}$ connection forms). 
 
 \vspace{2pt}
 
 \noindent \textbf{Operator Approach.}\ 
 %
-With the same base setting, I shifted focus to properties of $A\in C^{-\kappa}$ via its covariant derivative $\diff A = \diff + A\wedge $. Jointly working with X and Z, we study $\rmD_A:=\diff_A\oplus\diff_A^*$ as an unbounded operator on the $L^p$  space of differential forms for $p>1$.  The main goal is to have an equivalence of $\rmD_A$ and $A$ extending classical geometry concepts to rough geometry. I have defined a suitable domain via paracontrolled calculus, showed useful properties of the resolvent in $L^p$, and using spectral theory, I introduced gauge-invariant observables that fully describe gauge orbits. Notably, we proved that the gauge orbits of the 2D Yang-Mills Langevin dynamics reside in a Polish space using only the H\"older-Besov norm of $A$, improving upon previous, stricter norm requirements from the literature. 
+With the same base setting, I shifted focus to studying properties of connection form $A\in C^{-\kappa}$ via the covariant derivative $\diff_A = \diff + A\wedge $. Jointly working with X and Z, we study $\rmD_A:=\diff_A\oplus\diff_A^*$ as an unbounded operator on the $L^p$  space of differential forms for $p>1$.  The main goal is to have an equivalence of $\rmD_A$ and $A$ extending classical geometry concepts to rough geometry. I have defined a suitable domain via paracontrolled calculus, showed useful properties of the resolvent in $L^p$, and using spectral theory, I introduced gauge-invariant observables that fully describe gauge orbits. Remarkably, with this approach, we proved that the gauge orbits of the 2D Yang-Mills Langevin dynamics takes values in a Polish space using only the H\"older-Besov norm of $A$, improving upon previous, stricter norm requirements from the literature. 
 
 \vspace{2pt}
 
@@ -58,14 +58,14 @@ With the same base setting, I shifted focus to properties of $A\in C^{-\kappa}$ 
 %
 %These works use the theory of singular SPDEs as regulartiy structures and rough paths with interesting twists that are new showing that it is really \textit{recent}. There is also interplay with probability theory, PDEs as well as functional analysis. My research interest is in quantum gauge theory and would like to use SPDE techniques to extend smooth structures to rough  structures. This yields a better understanding of Yang-Mills(-Higgs) theory.
 %
-These works apply the theory of singular SPDEs, incorporating regularity structures and rough paths with novel, distinctive elements that mark them as genuinely \textit{recent} developments. They also feature rich interactions with probability theory, differential geometry, PDEs, and functional analysis. My research interest lies in stochastic analysis, currently with particular focus on quantum gauge theory, and I aim to use SPDE techniques to extend smooth structures to rough settings, enhancing our understanding of Yang-Mills-Higgs theory. 
+These works apply the theory of singular SPDEs, incorporating regularity structures and rough paths with novel, distinctive elements that mark them as genuinely \textit{recent} developments. They also have rich interactions with probability theory, differential geometry, PDEs, and functional analysis. My research interest lies in stochastic analysis, currently with particular focus on quantum gauge theory, and I aim to use SPDE techniques to extend smooth structures to rough settings, enhancing our understanding of Yang-Mills-Higgs theory. 
 %
 \newpage 
 
 \noindent \textbf{(A2)} \textbf{a)} 
 My research lies in stochastic analysis, and recently focused on singular SPDEs related to constructive QFT. I am planning to expand this aspect of my research through projects inspired by my work and  questions from academic discussions and current literature. The SLMath program offers a unique opportunity to meet professors and researchers in my field, creating space for discussions and collaborations which would significantly enhance my research and career. Finally, I am collaborating with researchers who may attend, and this environment is ideal to make progress in our joint work. 
 
-I hope to make a meaningful contribution to the SLMath community. My research introduces novel concepts that I would like to share with others. The main results could offer an alternative perspective on Yang-Mills theory, with possibility to further generalization. Furthermore, some ideas, such as rough line integration and techniques to preserve symmetries, could be useful in both SPDE and QFT problems with strong differential geometric framework.
+I hope to make a meaningful contribution to the SLMath community. My research introduces novel concepts that I would like to share with others. The main results could offer an alternative perspective on Yang-Mills theory, with possibility to further generalization. Furthermore, some ideas, such as rough line integration and techniques to preserve symmetries, could be useful in both SPDE and QFT problems with similar differential geometric framework.
 
 
 
@@ -78,13 +78,13 @@ I hope to make a meaningful contribution to the SLMath community. My research in
 \vspace{2pt}
 
 \noindent \textbf{b)} \textit{(i)}
-I have participated in several workshops and conferences, and I have given four short talks about my main project. I also participated at a research program where we initiated the operator approach project explained in (A1). Moreover, I organized two reading groups, one on Malliavin Calculus, and the other on Rough Paths with Signatures in Machine Learning. The aim was, besides learning, to build a group of PhD students with shared interests in probability. Even though I was already familiar with rough paths, I initiated the reading group as it is a strong, but lesser-known, theory in probability, and to provide a basis for collaboration with person A (see point (iii) below).
+I have participated in several workshops and conferences, and I have given four talks about my main project. I also participated at a research program where we initiated the operator approach project explained in (A1). Moreover, I organized two reading groups, one on Malliavin Calculus, and the other on Rough Paths with Signatures in Machine Learning. The aim was, besides learning, to build a group of PhD students with shared interests in probability. Even though I was already familiar with rough paths, I initiated the reading group as it is a strong, but lesser-known, theory in probability, and to provide a basis for collaboration with person A (see point (iii) below).
 
 
 %summer schools, conferences, workshops, gave talks, research stays collaborated, organised two reading groups, Malliavin calculus and rough paths theory to ehnace collaboration see point (iii). Back then workshops where people do exercises for calculus in the days I used to tutor during my Bachelor and MSc.  
 \vspace{2pt}
 
-\noindent \textit{(ii)}  During my PhD, I participated in the teaching stream, where I received mentorship on teaching principles. In addition to workshops and regular meetings with my mentor, this included conceptualizing different teaching methods, delivering mock lectures, and receiving peer feedback on my tutoring. Moreover---perhaps less formal but invaluable to me---I have been informally mentoring my niece. We have weekly short calls where I teach her mathematical concepts beyond her age, e.g. understanding multiplication and division conceptually rather than memorizing. These sessions mean a lot to both of us, as they not only support her intellectually but also develop a passion for learning, which she loves. I serve as an intellectual role model for her, something I did not have growing up as the first in my family to go to university.
+\noindent \textit{(ii)}  In my PhD, I am part of the teaching stream, where I received mentorship on teaching principles. In addition to workshops, `teaching cafes' and regular meetings with my mentor, this included conceptualizing different teaching methods, delivering mock lectures, and receiving peer feedback on my tutoring. Moreover---perhaps less formal but invaluable to me---I have been informally mentoring my niece. We have weekly short calls where I teach her mathematical concepts beyond her age, e.g. understanding multiplication and division conceptually rather than memorizing. These sessions mean a lot to both of us, as they not only support her intellectually, but also develop a passion for learning, which she loves. I serve as an intellectual role model for her, something I did not have growing up as the first in my family to go to university.
 
 %These sessions mean a lot to both of us, as they not only support her intellectually but also develop a passion for learning, which she loves, something I wish I had at her age, especially as the first in my family to go to university.
 
