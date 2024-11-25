@@ -60,15 +60,6 @@
 \newcommand{\1}{\mathbf 1}
 \newcommand{\<}{\langle}  
 \renewcommand{\>}{\rangle}
-\newcommand{\sign}{\operatorname{sgn}}
-
-\newcommand{\hor}{\text{-}\mathrm{hor}}
-\newcommand{\hgr}{\text{-}\mathrm{hgr}}
-\newcommand{\ax}{\text{-}\mathrm{ax}}
-\newcommand{\gr}{\text{-}\mathrm{gr}}
-
-
-
 \definecolor{blueblue}{rgb}{0.3, 0.3, 0.95}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\blue}[1]{\textcolor{blueblue}{#1}}
@@ -103,7 +94,6 @@
 \newcommand{\rmD}{\mathrm{D}}
 
 \newcommand{\fG}{\mathfrak{G}}
-\newcommand{\fg}{\mathfrak g}
 
 \newcommand{\bC}{\mathbb C}
 \newcommand{\T}{\mathbb T}
@@ -118,7 +108,7 @@
 
 \newcommand{\vertiii}[1]{{\left\vert\kern-0.4ex\left\vert\kern-0.4ex\left\vert #1 
     \right\vert\kern-0.4ex\right\vert\kern-0.4ex\right\vert}}
-\newcommand{\triple}[1]{\vertiii{#1}}
+
 
 
 
@@ -154,9 +144,7 @@ Most of these works consider the holonomy process and the connection form in the
 
 Another direction that one could study the measure, is through operator approach. This provides an alternative framework which also helps us understand the underlying geometry better. It is known in classical gauge theory that a connection 1-form $A$ can be equivalently be understood as a covariant derivative $\diff_A$. That is the second focus for my PhD thesis. We try to generalise well-known ideas from the smooth setting to cases where the connection form is distributional, particularly $A\in C^{0^-}$ in 2D, and in the future extend the results to $A\in C^{-1/2^-}$ in 3D. More precisely, we study the operator $\diff_A\oplus\diff_A^*$ and its properties as an unbounded operator on a suitable Banach space (see \Cref{sec:Dirac_2D}). 
 
-Finally, in \Cref{sec:future}, I mention several problems that arise naturally as a follow-up projects for my current work.  
-
-%I am planning to work on problems related to or arising from my PhD research, for example generalising these results to different geometries or different dimensions to deepen our understanding of YM theories (see \Cref{sec:future} for more details).  At the same time, I am open to exploring other directions within stochastic analysis that may diverge from or build upon my current work.
+I am planning to work on problems related to or arising from my PhD research, for example generalising these results to different geometries or different dimensions to deepen our understanding of YM theories (see \Cref{sec:future} for more details).  At the same time, I am open to exploring other directions within stochastic analysis that may diverge from or build upon my current work.
 
 \section{PhD Research Overview}
 %PhD Thesis title: 
@@ -178,40 +166,43 @@ Finally, in \Cref{sec:future}, I mention several problems that arise naturally a
 \[
 \|A^g\|_{W^{1,p}}\lesssim \|F^A\|_{L^p}.
 \]
-Crucial is that the $L^p$-norm of the curvature is gauge-invariant, i.e.\ $\|F^{A^g}\|_{L^p}=\|F^A\|_{L^p}$. In the setting of 2D Yang-Mills theory, the curvature has the same regularity as white noise which makes the $L^p$-norm not applicable. Furthermore, one cannot use Besov spaces (of negative regularity) as such norm of the curvature would not be gauge-invariant.
+Crucial is that the $L^p$-norm of the curvature is gauge-invariant, i.e.\ $\|F^{A^g}\|_{L^p}=\|F^A\|_{L^p}$. In the setting of 2D Yang-Mills theory, the curvature has the same regularity as white noise which makes the $L^p$-norm not applicable. Furthermore, generally Besov norms of the curvature are not gauge invariant.
 
-Therefore, we need to come up with a new quantity. Let us now consider the $M=[0,1]^2$. In this case, we can consider so-called Lasso field $L^A$ of a connection form $A$, which satisfy $L^{A^g}=g(0)L^Ag(0)^{-1}$. Recall that connection forms on $M=[0,1]^2$ have two components, i.e.\ $A=A_1\diff x^1+A_2\diff x^2$. A connection form $A$ is said to be in the axial gauge, if $A_2\equiv 0$ and $A_1(\cdot,0)=0$. One important property of the lasso field is that it yields to any $A$ an axial gauge representative $\bar A\sim A$ and it is given explicitly by 
+Therefore, we need to come up with a new quantity. Let us now consider the $M=[0,1]^2$. In this case, we can consider so-called Lasso fields, which are somehow related to the curvature by $L^A=g_AF^Ag_A^{-1}$ for suitable chosen $g_A:M\to G$. These satisfy 
+\[
+L^{A^g}=g(0)L^Ag(0)^{-1},
+\]
+which makes the lasso fields  gauge invariant up to a trivial action $G$. 
+
+Recall that connection forms on $M=[0,1]^2$ have two components, i.e.\ $A=A_1\diff x^1+A_2\diff x^2$. A connection form $A$ is said to be in the axial gauge, if $A_2\equiv 0$ and $A_1(\cdot,0)=0$. One important property of the lasso field is that it yields to any $A$ an axial gauge representative $\bar A\sim A$ and it is given explicitly by 
 \[
 \bar A_1(x)=\int^{x_2}_0 L^A(x_1,t)\dif t, \ \ \  \bar A_2(x)=0. 
 \]
 This observation allows us to translate the task looking for norms for $L^A$ to $\bar A$, i.e.\ the unique (up to an action of $G$) representative of $A$. 
 
-Moreover, the axial gauge representative of the Yang-Mills measure has very nice statistical properties that allows for integration along line segments. Therefore, we let $\alpha=\frac 1 2-\kappa$ ($\kappa>$ arbitrary small), and define for the space of axial gauge a space $\bfOmega_{\alpha\ax}$ containing elements $\bfA=(A,\bA)$ where $A$ is the integrated connection form and $\bA$ essentially the rough path lift of it. 
-%
-%I defined a (distributional) space $\bfOmega$ consisting of $\bfA=(A,\bA)$, where $A$ is an integrated 1-form and  $\bA$ its ``rough path" enhancement. 
+Moreover, the axial gauge representative of the Yang-Mills measure has very nice statistical properties that allows for integration along line segments. Therefore, we define for the space of axial gauge a space $\bfOmega$ containing elements $\bfA=(A,\bA)$ where $A$ is the integrated connection form and $\bA$ essentially the rough path lift of it. 
+
+
+I defined a (distributional) space $\bfOmega$ consisting of $\bfA=(A,\bA)$, where $A$ is an integrated 1-form and  $\bA$ its ``rough path" enhancement. 
 %
 %Smooth $1$-forms are in $\bfOmega$, $A$ is simply the line integral and $\bA$ the line integral against itself. 
 %
-This is novel and natural as line integration of 1-forms is a natural operation and $\bfOmega_{\alpha\ax}$ is a level-2 rough path extension of it. 
+This is novel and natural as line integration of 1-forms is a natural operation and $\bfOmega$ is a level-2 rough path extension of it. 
 %
-One has morally $C^\infty\subset \bfOmega_{\alpha\ax}\subset C^{-1/2-\kappa}$ and that $\bfOmega_{\alpha\ax}$ has a natural notion of gauge transformation. 
-
-Let $\beta=1-4\kappa$ and $\Omega_\beta$ be the space inside $C^{\beta-1}$ for which line integration is well-defined.  The rough Uhlenbeck compactness can be roughly formulated as follows:
-\begin{theorem}[Unprecise version] Let $\bfA\in \bfOmega_{\alpha\ax}$, then there exists gauge transformation $g$ such that $A^g\in \Omega_\beta$ and the map $\bfA\mapsto A^g$ is ``locally Lipschitz" continuous.   
-\end{theorem}
+One has morally $C^\infty\subset \bfOmega\subset C^{-1/2-\kappa}$ and that $\bfOmega$ has a natural notion of gauge transformation. 
 %have studied properties of this space with the theory of rough paths and extended the notion of gauge transformation via controlled rough path theory. 
-%
+
 %\textbf{Coulomb condition + Boundary + identification}
-For the proof, we got inspired from \cite{Uhlenbeck82} and to any $\bfA\in\bfOmega_{\alpha\ax}$,  we try to find $B\sim A$ such that $\diff^*B=0$ over a small square $\Lambda^\sigma=[0,\sigma]^2$. From there, I have derived a suitable system of singular SPDEs with non-trivial boundary conditions which I then solved with regularity structures (modulo adaptations). 
+We got inspired from the classical theory and to any $\bfA\in\bfOmega$,  we try to find $B$ gauge equivalent to $A$ such that $\diff^*B=0$ over a small square $\Lambda^\sigma=[0,\sigma]^2$. From there, I have derived a suitable system of singular SPDEs with non-trivial boundary conditions which I then solved with regularity structures (modulo adaptations). 
 %
 %\textbf{Regularity structures + Picard iteration}
 %
 The singular SPDE yields singular objects 
-that one needs to make sense of for which normally one would use probabilistic bounds. I have managed to define the singular objects from $\bfA\in\bfOmega_{\alpha\ax}$ pathwise. This is surprising, as the singular objects are not only more numerous but also qualitatively distinct from the information contained in the much simpler, geometrically more natural, quantity $\bfA=(A,\bA)$.  This task is challenging and it is highly non-standard in regularity structure. For example, it requires solution spaces  with certain symmetries, which leads to adaptations to the usual fixed point map to preserve these symmetries. Without those symmetries, there could be an even larger set of singular objects which we cannot define from $\bfA$. 
+that one needs to make sense of for which normally one would use probabilistic bounds. I have managed to define the singular objects from $\bfA\in\bfOmega$ pathwise. This is surprising, as the singular objects are not only more numerous but also qualitatively distinct from the information contained in the much simpler, geometrically more natural, quantity $\bfA=(A,\bA)$.  This task is challenging and it is highly non-standard in regularity structure. For example, it requires solution spaces  with certain symmetries, which leads to adaptations to the usual fixed point map to preserve these symmetries. Without those symmetries, there could be an even larger set of singular objects which we cannot define from $\bfA$. 
 %
 To actually define the singular objects from $\bfA$, I derived analytic identities relating convolution of Green function with line integrals (and iterated line integrals), derivative and integration identities, rough paths techniques, as well as systematic way of treating the singular objects. 
 
-Finally, I have shown regularity for $B$, namely that $B\in\Omega_\beta$. Afterwards, one needs to glue solutions from smaller squares to obtain a global connection form on $\Lambda$. I generalized the gluing technique from Uhlenbeck's [1982] to the distributional connection forms in $\Omega_\beta$. 
+Finally, I have shown regularity for $B$, slightly stronger than $C^{-\kappa}$. Afterwards, one needs to glue solutions from smaller squares to obtain a global connection form on $\Lambda$. I generalized the gluing technique from Uhlenbeck's [1982] to the distributional setting (morally $C^{-\kappa}$ connection forms).
 
 
 
@@ -221,9 +212,13 @@ Finally, I have shown regularity for $B$, namely that $B\in\Omega_\beta$. Afterw
 
 \medskip 
 
-\noindent With the same base setting with $M=\T^2$, I shifted focus to studying properties of connection form $A\in C^{-\kappa}$ via the covariant derivative $\diff_A = \diff + A\wedge $. We study $\rmD_A:=\diff_A\oplus\diff_A^*$ as an unbounded operator on the $L^p$  space of differential forms for $p>1$.  The main goal is to have an equivalence of $\rmD_A$ and $A$ extending classical geometry concepts to rough geometry. I have defined a suitable domain via paracontrolled calculus, showed useful properties of the resolvent in $L^p$, and using spectral theory, I introduced gauge-invariant observables that fully describe gauge orbits (in the case $G=U(N)$). Remarkably, with this approach, I proved that the gauge orbits of the 2D Yang-Mills Langevin dynamics takes values in a Polish space using only the H\"older-Besov norm of $A$, improving upon previous, stricter norm requirements from the literature. 
+\noindent Let $G\subset U(N)$ be a compact Lie group. Let us consider a trivial principal $G$-bundle with base manifold $\bT^2$. We can consider an associated vector bundle via a representation $G\to \operatorname{GL}(\mathbb C^N)$. It is known that connection forms $A$ can be viewed as a covariant derivative on a suitable associated vector bundle. In this project, we study properties of the space of connection forms via using covariant derivative $\diff_A$, or rather more precisely, the operator  $\mathrm{D}_A:=\diff_A\oplus\diff_A^*$ acting on the exterior algebra $\Omega=\bigoplus_{k=0}^ 2\Omega^k(\bT^2,\mathbb C^N)$. 
 
- 
+For a Banach space $X$ of functions we denote by $\Omega X$ the space of differential forms constitued by functions in $X$. We view the operator $\rmD_A$ as an unbounded operator on $\Omega L^2$. We define a suitable domain for $\rmD_A$ to make it a closed, self-adjoint operator with compact resolvent. We can show that the spectrum consists of discrete set eigenvalues with finite multiplicities. We can use suitable resolvent estimates and expansions to show that the orbit space $\Omega C^{\alpha-1}/\mathfrak G^\alpha$ is Polish.
+
+Furthermore, we can establish a natural gauge invariant observables via spectral properties  in the case of $G=U(N)$ and recover gauge transformations via these observables in this case.  
+
+
 
 \section{Future Research Directions}\label{sec:future}
 In the future, I am planning to extend the results of my PhD thesis to more sophisticated settings. Broadly speaking, I am always open to explore directions in rough analysis that are not necessarily mentioned in this list. 
@@ -250,7 +245,7 @@ The main difficulty in applying this to Yang-Mills theory lies in the fact that,
 %
 There are several extensions of the covariant approach, we mention three: (1) discrete approximation of covariant derivatives and new definition of the discrete Yang-Mills measure, (2) extension to compact surfaces, and (3) extension to three dimensional manifolds.  These are all natural next steps of this approach and it is part of the broader program. 
 
-We elaborate on the last point (3). Extension to three dimensions would provide an alternative state space for the Yang-Mills Langevin dynamic as treated in \cite{CCHS3d} (of course as well as the measure). Combining the theory of covariant approach, we could strengthen some of the properties of the orbit space of the Langevin dynamic, e.g.\ proving Polishness which is still open.   
+We comment mostly on (1) and (3). The point (1) is an innovative direction towards defining the Yang-Mills measure. It would require new techniques in defining the YM measure. It could also lead to enhancing our understanding of the 3D case which until now is open which brings us to point (3). Extension to three dimensions would provide an alternative state space for the Yang-Mills Langevin dynamic as treated in \cite{CCHS3d} (of course as well as the measure). Combining the theory of covariant approach, we could strengthen some of the properties of the orbit space of the Langevin dynamic, e.g.\ proving Polishness which is still open.   
 
 
 \subsection{Covariant GFF and constructing conditional Higgs measure}
@@ -307,10 +302,10 @@ The goal is to construct this measure in the Abelian case and later extend it to
 
 %The new idea is to really use the fact that one already knows the lasso field in the smooth setting. One could hope for the smooth approximation to converge via smallness assumptions of the equantities involved. 
 
-%\subsection{Yang-Mills via curvature description}
-%The discrete Yang-Mills measure is defined through holonomy processes \cite{Levy03}. We know that the holonomy, connection form, and covariant derivative are all equivalent description of the same object (at least in the smooth setting). We already mentioned the discrete approximation in \Cref{sec:ext_Dirac}, so one might wonder how the discrete approximation in terms of the connection form would look like. That is the goal of this project. We consider a finite dimensional approximation of connection forms with finite dimensional gauge group acting on them such that the Yang-Mills measure as written in  \eqref{eq:YM_measure} makes sense on a quotient space. The idea is to prove that such measure converges as the approximation gets finer. 
+\subsection{Yang-Mills via curvature description}
+The discrete Yang-Mills measure is defined through holonomy processes \cite{Levy03}. We know that the holonomy, connection form, and covariant derivative are all equivalent description of the same object (at least in the smooth setting). We already mentioned the discrete approximation in \Cref{sec:ext_Dirac}, so one might wonder how the discrete approximation in terms of the connection form would look like. That is the goal of this project. We consider a finite dimensional approximation of connection forms with finite dimensional gauge group acting on them such that the Yang-Mills measure as written in  \eqref{eq:YM_measure} makes sense on a quotient space. The idea is to prove that such measure converges as the approximation gets finer. 
 
-%The new methodology is based on the new enhanced understanding of the spaces on where the connection form lives in due to the works \cite{Chevyrev19,CCHS2d} as well as the extension I have in \Cref{sec:RUC_square}, and rough Uhlenbeck compactness. 
+The new methodology is based on the new enhanced understanding of the spaces on where the connection form lives in due to the works \cite{Chevyrev19,CCHS2d} as well as the extension I have in \Cref{sec:RUC_square}, and rough Uhlenbeck compactness. 
 
 
 %\section{Broader Impact and Applications}

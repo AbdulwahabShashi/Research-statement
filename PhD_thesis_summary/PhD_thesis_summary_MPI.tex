@@ -1,0 +1,450 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{titlesec}
+\usepackage{fullpage}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{bbm}
+\usepackage{comment}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{float}
+\usepackage{xr-hyper}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\numberwithin{equation}{section}
+\usepackage{float}
+\usepackage{extpfeil}
+
+
+%\usepackage{bibtex}
+%\usepackage[
+ %   backend=biber,
+ %   style=alphabetic,
+ %   maxnames=50,
+ %   firstinits=false,
+ % ]{biblatex}
+
+%\addbibresource{references.bib}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\definecolor{brown}{rgb}{0.5, 0.21, 0.15}
+
+\definecolor{darkgreen}{rgb}{0.05, 0.7, 0.06}
+\newcommand{\brown}[1]{\textcolor{brown}{#1}}
+\newcommand{\PM}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}} % \E abbreviation for expectation
+\newcommand{\Log}{\operatorname{Log}}
+\newcommand{\hol}{\mathrm{hol}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\dif}{\,\mathrm{d}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Law}{\mathrm{Law}}
+\newcommand{\1}{\mathbf 1}
+\newcommand{\<}{\langle}  
+\renewcommand{\>}{\rangle}
+\newcommand{\sign}{\operatorname{sgn}}
+\newcommand{\tr}{\operatorname{tr}}
+
+
+\newcommand{\hor}{\text{-}\mathrm{hor}}
+\newcommand{\hgr}{\text{-}\mathrm{hgr}}
+\newcommand{\ax}{\text{-}\mathrm{ax}}
+\newcommand{\gr}{\text{-}\mathrm{gr}}
+
+
+\newcommand{\rdom}{{\hspace{1pt}\scalebox{0.8}{\raisebox{0.65pt}{$\blacktriangleleft$}}\hspace{1pt}}}
+\newcommand{\ldom}{{\hspace{1pt}\scalebox{0.8}{\raisebox{0.65pt}{$\blacktriangleright$}}\hspace{1pt}}}
+
+\newcommand{\res}{\hspace{-1.2pt}\bullet\hspace{-1.2pt}}
+
+
+\definecolor{blueblue}{rgb}{0.3, 0.3, 0.95}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blueblue}{#1}}
+\newcommand{\green}[1]{\textcolor{darkgreen}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+
+\newcommand{\bfA}{\mathbf A}
+\newcommand{\bA}{\mathbb A}
+\newcommand{\bfi}{\mathbf i}
+\newcommand{\bfOmega}{\boldsymbol{\Omega}}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cZ}{\mathcal Z}
+
+\newcommand{\sfZ}{\mathsf Z}
+
+\newcommand{\bHa}{\mathbb{H}_{\mathsf{a}}}
+\newcommand{\bHc}{\mathbb{H}_{\mathsf{c}}}
+
+\newcommand{\rmD}{\mathrm{D}}
+
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fg}{\mathfrak g}
+\newcommand{\fu}{\mathfrak u}
+
+\newcommand{\bC}{\mathbb C}
+\newcommand{\T}{\mathbb T}
+\newcommand{\bH}{\mathbb H}
+\newcommand{\bN}{\mathbb N}
+\newcommand{\bP}{\mathbb P}
+\newcommand{\bQ}{\mathbb Q}
+\newcommand{\bS}{\mathbb S}
+\newcommand{\bT}{\mathbb T}
+\newcommand{\bZ}{\mathbb Z}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand*\recvert[1]{\left[\!\left]#1\right[\!\right]}
+
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.4ex\left\vert\kern-0.4ex\left\vert #1 
+    \right\vert\kern-0.4ex\right\vert\kern-0.4ex\right\vert}}
+\newcommand{\triple}[1]{\vertiii{#1}}
+
+
+
+    
+\title{PhD thesis summary}
+\author{Abdulwahab Mohamed}
+%\author{***}
+
+
+\begin{document}
+
+\maketitle
+\begin{itemize}
+\item RUC intro
+    \item Problem formulation Uhlenbeck
+    \item Rough additive functions
+    \item Derivation of PDE
+    \item SOlve PDE
+    \item Model bounds
+    \item Patching 
+    \item COvariant Derivative Intro
+    \item Domain and properties of operator
+    \item Approximation of connection form
+    \item  Gauge invariant observables
+    \item Polishness of space
+\end{itemize}
+\section{Introduction}
+Let $G\subset U(N)$ be a compact Lie group and $\fg\subset \fu(N)$ be its Lie algebra. 
+
+\section{Rough Uhlenbeck compactness}
+
+\subsection{Rough additive functions}
+
+%We start by recalling some basic definitions from \cite{CCHS2d}.  
+%
+%We fix a finite-dimensional Banach space $E$ and we recall the domain $\Lambda=[0,1]^2$. 
+%
+We denote by $\cX$ the set of line segments $\ell=(x,v)$ in $\Lambda$ where $x\in \Lambda$ is the starting point and $v\in\R^2$ is the direction vector. The length of $\ell$ is denoted by $|\ell|=|v|$. 
+%
+We say two lines $\ell=(x,v),\bar\ell=(\bar x,\bar v)\in\cX$ are \emph{joinable} if $\ell$ ends where $\bar\ell$ starts. In such case, we write $\ell\sqcup\bar\ell=(x,v+\bar v)$. We say that a function $A:\cX\to \fg$ is \emph{additive} if $A(\ell\sqcup\bar\ell)=A(\ell)+A(\bar\ell)$ for all joinable lines $\ell,\bar\ell\in\cX$ and denote the space of all such functions by~$\Omega$ \red{This definition is problematic for covariant derivative as $\Omega$ is exterior algebra etc}.  
+%
+We view $A(\ell)$ as the line integral of a (smooth) connection $1$-form $A $ along $\ell$. Indeed, when we have a smooth $1$-form $A\in\Omega^1 (\Lambda;\fg)$ we set
+\[
+A(\ell):=\int_\ell A,
+\]
+with the obvious abuse of notation that $A$ is both the integrated $1$-form and the $1$-form itself. 
+%
+Finally, we recall the space $\Omega_{\beta\gr}$ defined for $\beta\in (0,1]$ by all $A\in\Omega$ for which
+\[
+|A|_{\beta\gr}:=\sup_{\ell\in\cX,|\ell|\neq 0}\frac{|A(\ell)|}{|\ell|^\beta}<\infty.
+\]
+We define $\Omega^1_{\beta\gr}$ to be the completion of the normed vector space $(\Omega^1,|\cdot|_{\beta\gr})$. 
+
+\subsubsection{Definition of rough additive functions}
+%
+We now define the notion of an \emph{enhanced additive function}: 
+%
+For $A\in\Omega$, we impose that  $\bA:\cX\to \fg\otimes \fg$ satisfies the following version of Chen's relation: 
+%
+For all joinable lines $\ell=(x,cw),\bar\ell=(\bar x,\bar cw)\in\cX$, we have $\bA(\ell\sqcup \bar\ell)-\bA(\ell)-\bA(\bar\ell)=A(\ell)\otimes A(\bar \ell)$.
+We denote by $\bfOmega$ the set of all such enhanced additive functions $\bfA=(A,\bA)$.  In case $A$ is a smooth connection $1$-form $A$, we set
+%
+$$\bA(\ell)=\int^1_0\int^r_0 \diff\ell_A(r') \otimes\diff\ell_A(r)=\int^1_0\ell_A(r)\otimes\diff\ell_A(r),$$
+%
+where the notation $\ell_A:[0,1]\to\fg$ is defined by $\ell_A(t):=A((x,tv))$ for $\ell=(x,v)$. This $\bA$ is reminiscent of the iterated integral that appears in rough paths theory. 
+%
+Let $\alpha\in (\frac 13,\frac 12)$ and define the following:
+\begin{align}
+\|\bA\|_{2\alpha\gr}:=\sup_{\ell\in\cX,|\ell|\neq 0}\frac{|\bA(\ell)|}{|\ell|^{2\alpha}}. 
+\end{align}
+
+\begin{definition}[Rough additive function]
+	%
+	We define the space $\bfOmega_{\alpha\gr}$ of \emph{rough additive functions} (RAF) as the space of $\bfA\in\bfOmega$ such that 
+	\begin{align}\triple{\bfA}_{\alpha\gr}:=|A|_{\alpha\gr}+\|\bA\|_{2\alpha\gr}^{1/2}<\infty.\end{align} 
+	%
+	We denote by $\bfOmega^1_{\alpha\gr}$ the closure of smooth connection 1-forms under the metric $\triple{\cdot\,;\cdot}_{\alpha\gr}$ (indeced by $\triple{\cdot}_{\alpha\gr}$). 
+	%
+\end{definition}
+
+
+%We naturally have $\bfOmega_{\alpha\gr}\hookrightarrow\Omega_{\alpha\gr}$ and $\bfOmega^1_{\alpha\gr}\hookrightarrow\Omega^1_{\alpha\gr}$. Furthermore, for any $\beta\in (\frac 12,1] $, we have that any $A\in\Omega^1_{\beta\gr}$ can be canonically enhanced by means of Young integration to obtain $\bA$ yielding $\Omega_{\beta\gr}^1\hookrightarrow\bfOmega_{\beta\gr}^1$. Finally, we want to mention that \green{Corollary 3.23} in \cite{Chevyrev18YM} tells us that $\bfOmega^1_{\alpha\gr}\hookrightarrow \Omega C^{\alpha-1}$. 
+
+
+\subsubsection{State space of rough axial gauges}
+We also need to define rough additive functions in axial gauge. 
+
+
+
+
+\subsubsection{Gauge transformation}\label{sec:gauge_transformation}
+Let $\bfA=(A,\bA)\in \bfOmega^1_{\alpha\gr}$, and $g:\Lambda\to G$. Define for $\ell\in\cX$ and $\ell_g(t):=g(x+tv)$. For any $\bfA$ we can associate naturally a genuine rough path $\ell_\bfA$. The follwoing
+\begin{definition}[Gauge transformed RAF]
+	%
+	For $\bfA$ and~$g$ as in Definition~\ref{d:controlled_gauge_trafo}, we define the \emph{gauge-transformed RAF} by~$\bfA^g = (A^g,\bA^g)$ by
+	%
+	\begin{align}\label{e:gauge_trafo_connection:2}
+		A^g(\ell):=\int^1_0 \Ad_{\ell_g(t)}\dif\ell_{\bfA}(t)-\dif\ell_g(t)\ell_{g^{-1}}(t), \quad \ell \in \cX,
+	\end{align}
+	%
+	and denote by~$\bA^g$ its canonical enhancement in the sense of Proposition~\ref{thm:rough_integral}.
+	%
+\end{definition}
+
+
+
+\subsubsection{Parallel transport}
+Let $\bfA\in\bfOmega^1_{\alpha\gr}$. We consider the \emph{linear} rough differential equation~(RDE)
+%
+\begin{align}\label{eq:holonomy_RDE}
+\dif y(t)=y(t)\dif\ell_\bfA(t), \ \ \ y(0)=1_G
+\end{align}
+%
+which has a unique solution. 
+
+\begin{definition}[Holonomy]\label{def:holonomy}
+	%
+	For~$\bfA\in\bfOmega^1_{\alpha\gr}$ and~$\ell \in \cX$, we define the \emph{holonomy} of~$\bfA$ around~$\ell$ by $\hol(\bfA,\ell) := y(1)$ where~$y$ denotes the unique solution to the RDE~\eqref{eq:holonomy_RDE}.
+	%
+\end{definition}
+
+
+
+
+
+%
+%\abdul{There is also a reverse direction of this result}
+
+%
+
+
+There is a useful reverse statement to the previous result also holds to some extent. It is known that it holds in the smooth and the Young regime as written in \orange{ [Sengupta92??, Prop. 2.1.2]} and \green{\cite[Prop. 3.35]{CCHS2d}} respectively. Even though ours is not far from Young regime it implies \green{\cite[Prop. 3.35]{CCHS2d}}. 
+%
+
+%
+\begin{proposition}\label{prop:rough_Sengupta}
+ Let $\bfA\in\bfOmega_{\alpha\gr}^1$ and $B\in \Omega_{2\alpha\gr}^1$. Assume there exists $x\in \Lambda$ and $g_0\in G$ such that for all piecewise linear loops $\gamma$ starting at $x$ and ending at $x$, we have
+ \[
+ \hol(B,\gamma)=\Ad_{g_0}\hol(\bfA,\gamma).
+ \]
+ Then there exists $g\in \mathring\fG^{\alpha\gr}_A$ such that $A^g=B$. 
+\end{proposition}
+
+
+
+
+
+
+
+\subsection{Summary of Key Contributions: Derivation of the Elliptic PDE}
+Recall for a given $1$-form $A$, we have $\diff^*A=-\sum_{i=1}^2\partial_i A_i$.
+This section derives a system of elliptic (S)PDEs to solve for $\diff^*A^g=0$ for a given $A$ in the axial gauge.  This task is non-trivial as there is infinitely many ways to set up PDEs from $\diff^*A^g=0$. This degree of freedom of choice poses challenges in finding an equation that can be solved. All these SPDEs are singular as $A\in C^{-1/2^-}$ and the fact there is non-linearities consisting of low regularity distributions. 
+
+The equation is also equipped with boundary conditions since we are on $\Lambda=[0,1]^2$ and regardless of this fact, we have to solve it in smaller squares anyways to introduce smallenss parameter. The boundary condition is also non-trivial and requires additional care to set up. Finally, we introduce additional manipulations to deal with regularity issues coming from the fact we are working on a bounded domains. 
+
+
+
+\subsection{SOlution theory SPDE}
+The equation is singular and is solved with regularity structures. There is some adaptations as there are some considerations specifically needed for truncation of Green function for elliptic problems that is different than parabolic equations. Other than the main change is that for solving the equation we should work with regularity structurre which incorporates additional structures of the singular objects. This is done by considering a fixed point map which is highly non-standard. In fact, we do Da-Prato Debussche trick to presereve these additional geometric structures. 
+
+Finally, identifying the value of $H=\Ad_g$ requires a seperate step which cannot simply done in the smooth setting. Somehow we show that in the smooth setting there is a candidate $g$ and to identify that indeed $H=\Ad_g$ we use uniqueness of a singular SPDE. This is an interesting phenomen, because the SPDE is an affine equation but singular and it has unique solution when one considers smallness in lower-regularity norms \red{Precise?}. 
+
+
+\subsection{Model construction and input data via rough additive functions}
+The model construction is very unique as normally one has 
+$$
+A_1\stackrel{\text{probabilistic}}{\xmapsto{\hspace{1.7cm}}} \,\sfZ=(\Pi,\Gamma),
+$$
+but we have a step in the middle namely 
+$$A_1\stackrel{\text{probabilistic}}{\xmapsto{\hspace{1.7cm}}} \bfA=(A,\bA) \stackrel{\text{deterministic}}{\xmapsto{\hspace{1.7cm}}} \,\sfZ=(\Pi,\Gamma).$$
+The last map is continuous. This is very surprising as the terms in the regularity structures is more and different than the elements contained in $\bfA$. 
+
+This relies on techniques inspired by several heuristics, namely convolution with $K_1=\partial_1 \Delta^{-1}$ on $A_1$ acts as line integration of $A$, and $\partial_2$ reduces regularity by $\frac 1 2+\kappa$ on terms like $A_1$ and more generally on terms that do not contain derivatives with respect to the $x_2$-variable. Finally, some terms can be written as full-derivatives. For example
+\[
+\partial_i f\partial_j g-\partial_j f\partial_i g=\partial_i (f\partial_j g)-\partial_j (f\partial_i g). 
+\]
+For some terms, we need additional structure, to enforce they arise as full derivatives. 
+
+We split the terms in regularity structures in three different type of terms, core, boundary and rest. To define core we use the first two heuristics and for boundary we use more rough paths theory. Finally to define the terms on the rest we have a notion that allows us to reduce the definition of model to core elements. I have developed a systematic framework to deal with the latter. 
+
+There is also input data which we define deterministically from $\bfA$, these arise because of low boundary regularity of the modelled distributions. This is also new. The idea is inspired by rough ito formula.  
+
+\subsection{Patching}
+The patching solution from smaller box, this is new and semi inspried by Uhlenbeck, but our situation is slightly easier as we have a nice grid.  
+
+
+\section{Covariant derivative}
+\begin{itemize}
+    \item Domain
+    \item Dense domain, closedness, self-adjointness
+    \item Properties of resolvent
+    \item Approximation for A
+    \item Closedness of gauge orbit spaces
+    \item Characterising gauge transformation
+\end{itemize}
+\subsection{Introduction}
+ Let $P\to \T^2$ be a (trivial) principal $G$-bundle.  We use the defining representation $\rho:G\to \operatorname{GL}(\bC^N)$, i.e.\ $g\mapsto\rho(g)=g$ where the $g$ on the right hand side is the linear map induced from matrix multiplication. This induces a representation on the Lie algebra, $\rho_*:\fg\to \mathfrak{gl}(\bC^N)$, which can be checked to be $X\mapsto \rho_*(X)=X$. Therefore, in the sequel the represntation will be suppressed. 
+
+To this principal $G$-bundle we associate an associated vector bundle. The bundle is $E=P\times \bC^N/G$, i.e.\ it is a bundle where the fibres look like $\bC^N$. We can also choose a global section in of $E$ from the global section of $P$.  
+
+
+\begin{remark}
+    This associated vector bundle is likely an arbitrary choice, e.g.\ the choice of $\bC^N$. One could have chosen other ones as well (see \rem{rem:unitary_general}).
+\end{remark}
+
+Let $A\in\Omega^1(\bT^2,\fg)$ be a connection $1$-form. We want to study the covariant exterior derivative $\diff_A:\Omega^k(\bT^2,\bC^N)\to \Omega^{k+1}(\bT^2,\bC^N)$ and its adjoint $\diff^*_A:\Omega^k(\bT^2,\bC^N)\to \Omega^{k-1}(\bT^2,\bC^N)$. We could add these two maps to obtain the ``Covariant Dirac operator'' $\rmD_A:= \diff_A\oplus\diff_A^*$ as an endomorphism on 
+\[
+\Omega(\bT^2,\bC^N):=\bigoplus_{k=0}^2 \Omega^k(\bT^2,\bC^N).
+\]
+From here onwards we avoid writing the spaces $\bT^2$, $\bC^N$ etc, and we simply write $\Omega$ (or $\Omega^k$). 
+
+
+
+
+\subsection{Motivation and directions}
+We study the properties of the covariant Dirac operator $\rmD_A$ as an unbounded operator on $\Omega L^2$. We study the properties and make attempts to understand gauge transformations and gauge invariant observables. First we study in the case when everything is smooth and then we show how to push further to the case where $A$ is a distributional connection form.  
+
+There are several motivation to study the covariant Dirac operator. We state several ones.
+
+\subsubsection{State space for 2D Yang-Mills}
+One of the first motivation is to study the covariant Dirac operator as a way of defining an alternative state space for the 2D Yang-Mills as defined in \cite{CCHS2d}. It would be interesting to have an alternative viewpoint. Another advantage to have alterantives is that some alternatives are easily generalisable for higher dimensions (say 3D Yang-Mills). So the goal of such project is to somehow obtain such dictionary. 
+
+\begin{center}
+\begin{tabular}{l|c|c}
+    & Connection form & Dirac operator  \\ \hline 
+     State space & $A\in \Omega^1_\alpha$ & $(\rmD_A,\cD(\rmD_A))\in ?$\\
+     Gauge transformation & $\fG^{\alpha,0}$ & $\rmD_A^U=U\rmD_AU^{-1}$, $U\in ?$ \\  
+     Gauge invariant observable & $W(A,\gamma)$ & $\sigma(\rmD_A)$, $\sigma(\rmD_A^2)$, $\tr P_A(t)$, ... $?$\\ 
+    Orbit space & $\fD^\alpha=\Omega^1_\alpha/\fG^{\alpha,0}$ & ? 
+\end{tabular}
+\end{center}
+It is not clear what to put in each entry to make the two columns somehow equivalent in the sense that one can go from the one to the other and vice versa. 
+
+\subsection{Covariant Dirac operator in the Young regime}
+Throughout this section we fix $\alpha\in (\frac 1 2,1)$ and a connection form $A\in\Omega C^{\alpha-1}$. We want to define the Dirac operator $\rmD_A$ on $\Omega L^p$ which requires a domain which is slightly more trick to find than in the smooth setting. We know the operator $\rmD_A=\rmD_0+\bA$ \red{$\bA$ is already used for somethign, make sure that is mentioned!}, and even though $\rmD_0:\Omega W^{\beta,p}\to\Omega W^{\beta-1,p}$ for any $\beta\in\bR$ boundedly, we have $\bA:\Omega W^{\beta,p}\to \Omega W^{\alpha-1,p}$ boundedly for any $\beta> 1-\alpha$. The only hope is to take $\beta=\alpha$ from where we get that $\rmD_A:\Omega W^{\alpha,p}\to\Omega W^{\alpha-1,p}$ boundely. 
+
+However, we want to insist that $\rmD_A\omega\in\Omega L^p$. This means that the $\omega$ that we take somehow has cancellation effect on $\bA$. Before we introduce several notations:
+
+    Recall the notation $\ldom$ used for Bony paraproducts (there is also $\rdom$ and $\res$). Also recall $G_\bfi$ is the Green function for $\rmD_0-\bfi$. 
+
+
+The paraproducts allow us to capture the intended cancellation perfectly. To continue, we define (a priori) a different operator $(\rmD_A,\cD(\rmD_A))$, where the domain is 
+\[
+\cD(\rmD_A):=\{\omega\in\Omega W^{\alpha,p}\colon \omega^\#=\omega+(G_\bfi*\bA)\ldom \omega\in \Omega W^{1,p}\}.
+\]
+One can check that for any $\omega$, we have that $\rmD_A\omega\in \Omega L^2$. 
+
+I have showed that this operator is closed, densely defined and self-adjoint \red{maybe mention briefly what the other authors have done before}. 
+
+\subsection{Revolvent properties}
+It is usually useful to study the resolvent and derive properties of the operator as closedness and so on. We will repeat an old result that we have proved in the smooth setting, namely 
+
+\begin{notation}
+Strictly speaking the resolvent for $(\rmD_0,\Omega W^{1,p})$ denoted by $R_0(z)$ is a map $R_0(z):\Omega L^p\to \Omega W^{1,p}$. However, we tend to use it exchangeably with the Green function $G_z$, in the sense that, we have maps, implicitly indexed by $\beta\in\bR$ (as well as $p$), namely $R_0(z):\Omega W^{\beta,p}\to\Omega W^{\beta+1,p}$. 
+\end{notation}
+
+\begin{lemma}\label{lem:existence_resolvent_Young}
+    There exists $C>0$ such that $z\in\bC$ satisfying $\Re(z^2)<0$ and $|z|\geq \max\{1,C\|A\|_{C^{\alpha-1}}\}$ implies $z\in\rho(\rmD_A)$ and $R_A(z)$ satisfies the resolvent identity
+    \[
+    R_A(z)=R_0(z)+R_0(z)\bA R_A(z),
+    \]
+    and for any $0\leq\beta\leq\alpha$, we have for any $f\in \Omega L^p$ 
+    \[
+    \|R_A(z)f\|_{ W^{\beta,p}}\lesssim |z|^{\beta-1}\|f\|_{L^p}, 
+    \]
+    where the proportionality constant  depends on only $C$, $p$ and $|A|_{C^{\alpha-1}}$. 
+    \end{lemma}
+
+\begin{lemma}\label{lem:recover_A_Young}
+Let $\beta>0$  and $\theta\in [0,\beta)$ such that  $\beta-\theta+\alpha-1>0$, then 
+\[
+\|(z^2(R_A(z)-R_0(z))+\bA)f\|_{W^{\alpha-1-\theta,p}}\lesssim |z|^{-\theta}\|f\|_{W^{\beta,p}},
+\]
+along $\Re(z^2)<0$ and $\log |z|\gtrsim 1+\log\|A\|_{C^{\alpha-1}}$. Hence, we can recover $\bA$ as an operator $\Omega W^{\beta,p}\to \Omega W^{\alpha-1-\theta,p}$ when we take $\theta\in(0,1]$. In particular, we can recover the $1$-form $A$ as a distribution by considering $Av_i=\bA(v_i\oplus 0\oplus 0)\in \Omega W^{\alpha-1-\theta,p}$, for basis elements $v_i$ of $\bC^N$. 
+\end{lemma}
+Of course can define gauge transformation etc. 
+
+
+\begin{lemma}\orange{To be made more precise:}
+ Let $\alpha\in (\frac 12,1)$ sufficiently close to $1$. Then there exists $C>0$ and $m\geq 1$ (depending on $\alpha$) such that 
+ \[
+ \|g\|_{C^{\alpha}}\leq C(1+\|A\|_{C^{\alpha-1}}+\|A^g\|_{C^{\alpha-1}})^m.
+ \]
+\end{lemma}
+
+\begin{theorem}
+    Let $\alpha(\frac 67,1)$. For any $A\in\Omega^1 C^{\alpha-1}$, the gauge orbit $[A]$ is closed in $\Omega^1 C^{\alpha-1}$. 
+\end{theorem}
+
+\begin{proof}
+Assume we have a sequence $(g_n)\subset \fG^\alpha$ and $B_n=A^{g_n}$ converges in $\Omega C^{\alpha-1}$. Then we have by the previous proposition that $g_n$ has a subsequence that converges in $C^{\delta}$ for $\delta<\alpha$ (sufficiently close) to $g\in\fG^\alpha$ (as $G$ is compact). It is then not difficult to see that $B=A^g$ in $\Omega C^{\delta-1}$. 
+\end{proof}
+
+\begin{remark}
+    Let $C^{\beta,0}$ denote the closure of smooth function in $C^\beta$. Now we have all the tools to show that the quotient space $\Omega C^{\alpha-1,0}/\fG^\alpha$ is Polish by using \theo{theo:quotient_space}. Also, note that, the separabaility of $\fG^\alpha$ is not needed for Polishness of the quotient space. Also note that the quotient space in \cite{CCHS2d} is with the  gauge group being  $\fG^{\alpha,0}$.  
+\end{remark}
+
+\subsection{Gauge invariant observables}
+
+In this section, we take $G=U(N)$. Unfortunately, our current approach is not robust enough to handle generic Lie groups $G\subset U(N)$ (see \rem{rem:unitary_general} below). We know the spectrum and multiplicity as well as suitably chosen traces of some functions are gauge invariant. To recover gauge transformations between two Dirac operators $\rmD_A$ and $\rmD_B$ we use such spectral properties. As such throughout most parts in this subsection, we work on $\Omega L^2$ where we have the spectral theorem to our disposal. We start using it already to recall that we can make sense of $\varphi(\rmD_A)$ for any $\varphi\in C(\bC)$. Furthermore, when we take $\varphi\in C^\infty_c(\bC)$ the trace of $\varphi(\rmD_A)$ makes sense as the eigenvalues are discrete with finite multiplicities (see \rem{rem:spectral_theorem} above). 
+
+
+The main result of this section is then 
+\begin{theorem}\label{thm:recover_gauge_smooth}
+    Assume $O_{\tr}(\rmD_A)=O_{\tr}(\rmD_B)$ as well as $O_{\dim}(\rmD_A)=O_{\dim}(\rmD_B)$, then there exists $g\in C^\infty(\bT^2;U(N))$ such that $A^g=B$. 
+\end{theorem}
+The proof is a bit too long and therefore we chose it to tell it throughout the next subsection.
+
+
+
+
+\bibliographystyle{alpha}
+\bibliography{references}
+
+
+\end{document}
