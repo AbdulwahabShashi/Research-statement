@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{titlesec}
+\usepackage[a4paper, margin=0.7in]{geometry}
+%\usepackage{fullpage}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{bbm}
+\usepackage{comment}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{float}
+\usepackage{xr-hyper}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\numberwithin{equation}{section}
+\usepackage{float}
+\usepackage{extpfeil}
+
+
+%\usepackage{bibtex}
+%\usepackage[
+ %   backend=biber,
+ %   style=alphabetic,
+ %   maxnames=50,
+ %   firstinits=false,
+ % ]{biblatex}
+
+%\addbibresource{references.bib}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\definecolor{brown}{rgb}{0.5, 0.21, 0.15}
+
+\definecolor{darkgreen}{rgb}{0.05, 0.7, 0.06}
+\newcommand{\brown}[1]{\textcolor{brown}{#1}}
+\newcommand{\PM}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}} % \E abbreviation for expectation
+\newcommand{\Log}{\operatorname{Log}}
+\newcommand{\hol}{\mathrm{hol}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\dif}{\,\mathrm{d}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Law}{\mathrm{Law}}
+\newcommand{\1}{\mathbf 1}
+\newcommand{\<}{\langle}  
+\renewcommand{\>}{\rangle}
+\newcommand{\sign}{\operatorname{sgn}}
+\newcommand{\tr}{\operatorname{tr}}
+
+
+\newcommand{\hor}{\text{-}\mathrm{hor}}
+\newcommand{\hgr}{\text{-}\mathrm{hgr}}
+\newcommand{\ax}{\text{-}\mathrm{ax}}
+\newcommand{\gr}{\text{-}\mathrm{gr}}
+
+
+\newcommand{\rdom}{{\hspace{1pt}\scalebox{0.8}{\raisebox{0.65pt}{$\blacktriangleleft$}}\hspace{1pt}}}
+\newcommand{\ldom}{{\hspace{1pt}\scalebox{0.8}{\raisebox{0.65pt}{$\blacktriangleright$}}\hspace{1pt}}}
+
+\newcommand{\res}{\hspace{-1.2pt}\bullet\hspace{-1.2pt}}
+
+
+\definecolor{blueblue}{rgb}{0.3, 0.3, 0.95}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blueblue}{#1}}
+\newcommand{\green}[1]{\textcolor{darkgreen}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+
+\newcommand{\bfA}{\mathbf A}
+\newcommand{\bA}{\mathbb A}
+\newcommand{\bfi}{\mathbf i}
+\newcommand{\bfOmega}{\boldsymbol{\Omega}}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cZ}{\mathcal Z}
+
+\newcommand{\sfZ}{\mathsf Z}
+
+\newcommand{\bHa}{\mathbb{H}_{\mathsf{a}}}
+\newcommand{\bHc}{\mathbb{H}_{\mathsf{c}}}
+
+\newcommand{\rmD}{\mathrm{D}}
+
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fg}{\mathfrak g}
+\newcommand{\fu}{\mathfrak u}
+
+\newcommand{\bC}{\mathbb C}
+\newcommand{\T}{\mathbb T}
+\newcommand{\bH}{\mathbb H}
+\newcommand{\bN}{\mathbb N}
+\newcommand{\bP}{\mathbb P}
+\newcommand{\bQ}{\mathbb Q}
+\newcommand{\bS}{\mathbb S}
+\newcommand{\bT}{\mathbb T}
+\newcommand{\bZ}{\mathbb Z}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand*\recvert[1]{\left[\!\left]#1\right[\!\right]}
+
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.4ex\left\vert\kern-0.4ex\left\vert #1 
+    \right\vert\kern-0.4ex\right\vert\kern-0.4ex\right\vert}}
+\newcommand{\triple}[1]{\vertiii{#1}}
+
+
+
+    
+\title{PhD Thesis Summary}
+\author{Abdulwahab Mohamed}
+\date{}
+%\author{***}
+
+
+\begin{document}
+
+%\maketitle
+\vspace{-10pt}
+\begin{center}
+    {\large \textbf{PhD Thesis Summary}} \\ \vspace{1pt}
+    Abdulwahab Mohamed
+\end{center}
+%\noindent {\footnotesize \textbf{Expected to finish PhD:} July/August 2025}
+%\vspace{-2pt}
+\section{Introduction}
+My PhD research focuses on the study of two-dimensional Yang-Mills (YM) theory using singular (S)PDE techniques. YM theory plays an important role in both mathematical physics and geometry, and from a probabilistic point of view, much remains to be understood. We are interested in understanding regularity properties of the ill-defined Gibbs-type measure on a manifold $M$ with principal $G$-bundle structure given by
+\begin{align}\label{eq:YM_measure}
+\mu_{\mathrm{YM}}(\diff A)=\frac 1 Z\exp\left(-\int_{M}|F^A(x)|_{\mathfrak g}^2\,\diff x\right)\diff A,
+\end{align}
+where $A$ is so-called connection form and $F^A$ is its curvature $2$-form and $\fg$ is the Lie algebra of the Lie group $G$. 
+%
+
+This measure is successfully constructed in series of works with different techniques, e.g.\ \cite{Levy03}. One crucial difficulty in making sense of the YM measure is that it is defined on space of equivalence classes of essentially connection forms. The equivalence class is defined through gauge transformations.   Previous constructions of the YM measure did not consider gauge-fixing the YM measure to a representative with good regularity. That is first done by my supervisor in \cite{Chevyrev19} via a rough Uhlenbeck compactness result on $M=\bT^2$ using lattice approximation.  
+
+The first aim of my thesis is to prove rough Uhlenbeck compactness using PDE techniques. As the PDE is on the continuum, the challenges that arise are very different than those in \cite{Chevyrev19}. I developed new definitions and techniques to solve the singular SPDE arising in this problem. For example, the result cannot be proved by the black box theory on regularity structures. This is elaborated in \Cref{sec:RUC}. 
+
+The second project, elaborated in \Cref{sec:operator}, is to formulate an operator-based approach to YM theory.
+%We consider the covariant derivative associated with a connection form $A$ and study this operator as an unbounded operator on $L^2$-valued differential forms. 
+This is part of a program to develop an alternative perspective on the theory of YM theory.
+
+%
+Throughout the remaining, we fix  $G\subset U(N)$ to be a compact Lie group and $\fg\subset \fu(N)$ to be its Lie algebra. We consider a trivial principal bundle $M\times G$ where $M=[0,1]^2$ or $M=\bT^2$. % in \Cref{sec:RUC} and $M=\bT^2$ in \Cref{sec:operator}.  
+
+
+
+
+\section{Rough Uhlenbeck compactness}\label{sec:RUC}
+\vspace{-7pt}\textit{{\footnotesize Joint work in progress with Ilya Chevyrev (Univ.\ of Edinburgh) and Tom Klose (Univ.\  of Oxford)}}\\
+
+\noindent In this work we generalise the result in \cite{Chevyrev19} using continuum PDE techniques inspired by the original paper \cite{Uhlenbeck82}. As explained in the introduction, we have the notion of a connection $1$-form $A\in\Omega^1(M,\mathfrak g)$. There is a gauge group acting on it by (sufficiently regular) functions $g:M\to G$ via $A^g=gAg-\diff gg^{-1}$. We denote this relation by $\sim$, i.e.\ $A\sim B$ if there is such $g$ such that $A^g=B$.  The Uhlenbeck compactness theorem essentially says that under smallness assumption one can gauge transform a given connection form $A$ to $A^g$ such that 
+$
+\|A^g\|_{W^{1,p}}\lesssim \|F^A\|_{L^p}.
+$
+%Crucial is that the $L^p$-norm of the curvature is gauge-invariant, i.e.\ $\|F^{A^g}\|_{L^p}=\|F^A\|_{L^p}$. 
+In the setting of 2D Yang-Mills theory, the curvature has the same regularity as white noise which makes the $L^p$-norm not applicable. %Furthermore, one cannot use Besov spaces (of negative regularity) as such norm of the curvature would not be gauge-invariant.
+
+Therefore, we need to come up with a new quantity. In this project, we take $M=[0,1]^2$. In this case, we can consider the so-called Lasso field $L^A$ of a connection form $A$ instead of the curvature. Recall that we can write connection forms as $A=A_1\diff x^1+A_2\diff x^2$, and we say $A$ is in the axial gauge if $A_2\equiv 0$ and $A_1(\cdot,0)=0$. One important property is that there is essentially a one-to-one correspondence between lasso fields and axial gauges. 
+%yields to any $A$ an axial gauge representative $\bar A\sim A$ and it is given explicitly by 
+%\[
+%\bar A_1(x)=\int^{x_2}_0 L^A(x_1,t)\dif t, \ \ \  \bar A_2(x)=0. 
+%\]
+%This observation allows us to translate the task looking for norms for $L^A$ to $\bar A$, i.e.\ the unique (up to an action of $G$) representative of $A$. 
+
+Moreover, the axial gauge representative of the Yang-Mills measure has very nice statistical properties that allow for integration along line segments. Therefore, we let $\alpha=\frac 1 2-\kappa$ ($\kappa>0$ small), and define for the space of axial gauge a space $\bfOmega_{\alpha\ax}$ containing elements $\bfA=(A,\bA)$ where $A$ is the integrated connection form and $\bA$ essentially the rough path lift of it. 
+%
+%I defined a (distributional) space $\bfOmega$ consisting of $\bfA=(A,\bA)$, where $A$ is an integrated 1-form and  $\bA$ its ``rough path" enhancement. 
+%
+%Smooth $1$-forms are in $\bfOmega$, $A$ is simply the line integral and $\bA$ the line integral against itself. 
+%
+This is novel and natural as line integration of 1-forms is a natural operation and $\bfOmega_{\alpha\ax}$ is a level-2 rough path extension of it. 
+%
+One has morally $C^\infty\subset \bfOmega_{\alpha\ax}\subset C^{-1/2-\kappa}$.
+
+%and that $\bfOmega_{\alpha\ax}$ has a natural notion of gauge transformation. 
+
+Let $\beta=1-4\kappa$ and $\Omega_\beta$ be the space inside $C^{\beta-1}$ for which line integration is well-defined.  The rough Uhlenbeck compactness can be roughly formulated as follows:
+\begin{theorem}[Unprecise version] Let $\bfA\in \bfOmega_{\alpha\ax}$, then there exists gauge transformation $g$ such that $A^g\in \Omega_\beta$ and the map $\bfA\mapsto A^g$ is ``locally Lipschitz" continuous.   
+\end{theorem}
+%have studied properties of this space with the theory of rough paths and extended the notion of gauge transformation via controlled rough path theory. 
+%
+%\textbf{Coulomb condition + Boundary + identification}
+For the proof, we got inspired from \cite{Uhlenbeck82} and to any $\bfA\in\bfOmega_{\alpha\ax}$,  we try to find $B\sim A$ such that $\diff^*B=0$ over a small square $\Lambda^\sigma=[0,\sigma]^2$. From there, I derived a suitable system of singular SPDEs with non-trivial boundary conditions which I then solved with regularity structures (modulo adaptations). 
+%
+%\textbf{Regularity structures + Picard iteration}
+%
+The singular SPDE yields singular objects 
+that one needs to make sense of for which normally one would use probabilistic bounds. I have managed to define the singular objects from $\bfA\in\bfOmega_{\alpha\ax}$ pathwise. This is surprising, as the singular objects are not only more numerous but also qualitatively distinct from the information contained in the much simpler, geometrically more natural, quantity $\bfA=(A,\bA)$.  This task is challenging and it is highly non-standard in regularity structure. For example, it requires solution spaces with certain symmetries, which leads to adaptations to the usual fixed point map to preserve these symmetries. Without those symmetries, there could be an even larger set of singular objects which we cannot define from $\bfA$. 
+%
+%To actually define the singular objects from $\bfA$, I derived analytic identities relating the convolution of Green function with line integrals (and iterated line integrals), derivative and integration identities, rough paths techniques, as well as a systematic way of treating the singular objects. 
+
+Finally, I have shown regularity for $B$, namely that $B\in\Omega_\beta$. Afterwards, one needs to glue solutions from smaller squares to obtain a global connection form on $\Lambda$. I generalized the glueing technique from Uhlenbeck's [1982] to the distributional connection forms in $\Omega_\beta$. 
+
+
+
+
+\section{Covariant derivative}\label{sec:operator}
+\vspace{-7pt}\textit{{\footnotesize Joint work in progress with Ilya Chevyrev (Univ.\ of Edinburgh) and Massimiliano Gubinelli (Univ.\ of Oxford)}}\\
+
+\noindent With the same base setting with $M=\T^2$, I shifted focus to studying properties of connection form $A\in C^{-\kappa}$ via the covariant derivative $\diff_A = \diff + A\wedge $. We study $\rmD_A:=\diff_A\oplus\diff_A^*$ as an unbounded operator on the $L^p$  space of differential forms for $p>1$.  The main goal is to have an equivalence of $\rmD_A$ and $A$ extending classical geometry concepts to rough geometry. I have defined a suitable domain via paracontrolled calculus, showed useful properties of the resolvent in $L^p$, and using spectral theory, I introduced gauge-invariant observables that fully describe gauge orbits (in the case $G=U(N)$). Remarkably, with this approach, I proved that the gauge orbits of the 2D Yang-Mills Langevin dynamic takes values in a Polish space using only the H\"older-Besov norm of $A$, improving upon previous, stricter norm requirements from the literature. 
+
+
+
+\bibliographystyle{alpha}
+\bibliography{references}
+
+
+\end{document}

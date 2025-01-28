@@ -1,0 +1,338 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{titlesec}
+\usepackage[a4paper, margin=0.7in]{geometry}
+%\usepackage{fullpage}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb}
+%\usepackage{sectsty}
+%\sectionfont{\small}
+\usepackage{mathrsfs}
+\usepackage{bbm}
+\usepackage{comment}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{float}
+\usepackage{xr-hyper}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\numberwithin{equation}{section}
+\usepackage{float}
+\usepackage{extpfeil}
+
+
+%\usepackage{bibtex}
+%\usepackage[
+ %   backend=biber,
+ %   style=alphabetic,
+ %   maxnames=50,
+ %   firstinits=false,
+ % ]{biblatex}
+
+%\addbibresource{references.bib}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\definecolor{brown}{rgb}{0.5, 0.21, 0.15}
+
+\definecolor{darkgreen}{rgb}{0.05, 0.7, 0.06}
+\newcommand{\brown}[1]{\textcolor{brown}{#1}}
+\newcommand{\PM}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}} % \E abbreviation for expectation
+\newcommand{\Log}{\operatorname{Log}}
+\newcommand{\hol}{\mathrm{hol}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\dif}{\,\mathrm{d}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Law}{\mathrm{Law}}
+\newcommand{\1}{\mathbf 1}
+\newcommand{\<}{\langle}  
+\renewcommand{\>}{\rangle}
+\newcommand{\sign}{\operatorname{sgn}}
+\newcommand{\tr}{\operatorname{tr}}
+
+
+\newcommand{\hor}{\text{-}\mathrm{hor}}
+\newcommand{\hgr}{\text{-}\mathrm{hgr}}
+\newcommand{\ax}{\text{-}\mathrm{ax}}
+\newcommand{\gr}{\text{-}\mathrm{gr}}
+
+
+\newcommand{\rdom}{{\hspace{1pt}\scalebox{0.8}{\raisebox{0.65pt}{$\blacktriangleleft$}}\hspace{1pt}}}
+\newcommand{\ldom}{{\hspace{1pt}\scalebox{0.8}{\raisebox{0.65pt}{$\blacktriangleright$}}\hspace{1pt}}}
+
+\newcommand{\res}{\hspace{-1.2pt}\bullet\hspace{-1.2pt}}
+
+
+\definecolor{blueblue}{rgb}{0.3, 0.3, 0.95}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blueblue}{#1}}
+\newcommand{\green}[1]{\textcolor{darkgreen}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+
+\newcommand{\bfA}{\mathbf A}
+\newcommand{\bA}{\mathbb A}
+\newcommand{\bfi}{\mathbf i}
+\newcommand{\bfOmega}{\boldsymbol{\Omega}}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cZ}{\mathcal Z}
+
+\newcommand{\sfZ}{\mathsf Z}
+
+\newcommand{\bHa}{\mathbb{H}_{\mathsf{a}}}
+\newcommand{\bHc}{\mathbb{H}_{\mathsf{c}}}
+
+\newcommand{\rmD}{\mathrm{D}}
+
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fg}{\mathfrak g}
+\newcommand{\fu}{\mathfrak u}
+
+\newcommand{\bC}{\mathbb C}
+\newcommand{\T}{\mathbb T}
+\newcommand{\bH}{\mathbb H}
+\newcommand{\bN}{\mathbb N}
+\newcommand{\bP}{\mathbb P}
+\newcommand{\bQ}{\mathbb Q}
+\newcommand{\bS}{\mathbb S}
+\newcommand{\bT}{\mathbb T}
+\newcommand{\bZ}{\mathbb Z}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand*\recvert[1]{\left[\!\left]#1\right[\!\right]}
+
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.4ex\left\vert\kern-0.4ex\left\vert #1 
+    \right\vert\kern-0.4ex\right\vert\kern-0.4ex\right\vert}}
+\newcommand{\triple}[1]{\vertiii{#1}}
+
+
+
+    
+\title{PhD Thesis Summary}
+\author{Abdulwahab Mohamed}
+\date{}
+%\author{***}
+
+
+\begin{document}
+
+%\maketitle
+\vspace{-10pt}
+\begin{center}
+    {\large \textbf{Research Plan}} \\ \vspace{1pt}
+    Abdulwahab Mohamed
+\end{center}
+%\noindent {\footnotesize \textbf{Expected to finish PhD:} July/August 2025}
+%\vspace{-2pt}
+%\section{Future Research Directions}\label{sec:future}
+%The projects that I am planning to work on are inspired from Yang-Mills theory and broadly EQFT. All of these works have (singular) SPDEs in them and as such it fits naturally within the goals of RTG. They fit particularly well in the research of Prof.\ Hendrik Weber.  Broadly speaking, I am always open to explore directions in stochastic and rough analysis that are not necessarily mentioned in this list. 
+%
+The projects that I am planning to work on are inspired by Yang-Mills theory (broadly EQFT), which I approach via singular SPDEs. This connects naturally to the RTG's focus on analysing irregular SPDEs and using advanced probabilistic methods. My expertise aligns particularly well with topics in the research of Prof.\ Hendrik Weber, and I am open to exploring related problems in stochastic and rough analysis. While the projects listed focus on well-posedness of SPDEs, they naturally pave the way for exploring numerical approximations of the SPDEs, further supporting the RTG's objectives. 
+
+%The general problems I would like to work on are those in intersection of SPDEs, rough analysis, functional analysis and geometry. 
+
+%General explanation, functional analysis, probability interaction, spdes, pdes, finding more structures, generalising ideas, global existence 
+
+\subsection*{1\quad Rough Uhlenbeck compactness on closed surfaces}
+%
+This project builds on the rough Uhlenbeck compactness in my PhD thesis, extending them to a generic closed smooth surface $M$ as the base manifold of the trivial principal $G$-bundle. I have been developing this in parallel, with the possibility of including preliminary findings in my thesis.
+
+As in the classical setting, the main work involves proving the existence of the Coulomb
+gauge on a small Euclidean ball; in our setting, however, it suffices to consider a small
+Euclidean square. The analysis of the SPDE as done in the main project of my PhD can be used with minimal adaptations. The main difference is that the glueing step is slightly non-trivial as we have a generic manifold. Furthermore, on there the Yang-Mills measure does not behave like Gaussian as was the case on $[0,1]^2$ and there is no axial gauge representative. The latter leads to a change of definitions of the quantities we need to show stochastic bounds for. Ideas to overcome these challenges are: (1) considering quantities from parallel transport instead of axial gauge representative, and (2) using Gaussian-type bound of the measure. 
+
+This project advances the mathematical understanding of Yang-Mills theory, and contributes new tools for singular SPDE analysis which is a key focus of the RTG. 
+
+  
+%
+%This project is generalising the previous work Rough Uhlenbeck in my PhD thesis, but instead consider a generic closed smooth surface $M$ as base manifold. I have been working on this in parallel and it could possibly appear in my PhD thesis.
+%
+
+%As in the classical setting, the main work involves proving the existence of the Coulomb gauge on a small Euclidean ball; in our setting, however, it suffices to consider a small Euclidean square. We need to change the definition of the metric for of the connection forms slightly. The idea is to consider a suitable graph of the manifold and consider the supremum of the metric on each face (as the faces are homomorphic to squares). From here onwards we apply similar techniques as explained in \Cref{sec:RUC_square}. 
+
+
+%We have to make sure that each face of the graph is small enough (in fact smaller than the injectivity radius). On each face, we use the techniques developed in the PhD thesis. We consider a further a subgraph on each face. Each subfaces is then mapped to a Euclidean square on which we have the smallness assumptions to find a Coulomb gauge as done in the rough Uhlenbeck compactness on the unit square. 
+
+%
+
+\subsection*{2\quad Covariant GFF and constructing conditional Higgs measure}
+With Dr.\ Ajay Chandra (Imperial College London), we are planning to study conditional Higgs measure, by first studying a covariant GFF. That is, for a given (rough) $A$, we would like to study the Gibbs-type measure
+\[
+\mu_A(\diff\Phi)=\frac 1 {Z_A} \exp\left( -\int_{\bT^2}|\diff_A\Phi(x)|^2+c_A|\Phi(x)|^2\diff x\right)\diff\Phi. 
+\]
+Of course, the way it is written, this measure is ill-defined. This measure is representing a Gaussian free field with a covariance kernel given by the Green function for $(\diff_A^*\diff_A+c_A)$. There are several ideas that one could try: study the measure via the covariant Laplacian, Dirichlet form or through the Feynman-Kac formulation of the covariance kernel. The renormalised Laplacian in the Abelian case is constructed in \cite{MM22}. The authors in there use $A$ being Gaussian free field, while in our case we want to sample from the gauge field marginal under the Yang-Mills measure which is slightly different. Important work in the study of gauge field marginal is \cite{CC24}. It would be important to extend such results to non-Abelian settings for the general case.   
+
+The goal is to construct this measure in the Abelian case and later extend it to the non-Abelian setting. The way to rigorously construct this measure is by first taking a mollified/discrete $A^\varepsilon\to A$ and considering the measure $\mu_{A^\varepsilon}$ and show convergence (where we need to take $c_{A^\varepsilon}\to-\infty$). Once we have this measure we explore directions to construct the conditional Yang-Mills-Higgs measure and then the Yang-Mills-Higgs measure. In the non-Abelian case, this could lead to the first construction of the measure which is an important open problem in EQFT. 
+
+\subsection*{3\quad Global existence of orbits of Yang-Mills Langevin dynamic}
+The parabolic stochastic quantisation of 2D Yang-Mills  has essentially the form 
+\[
+\partial_t A=\Delta A + A^3+A\nabla A+\xi.
+\]
+We have written $A^3$ and $A\nabla A$  to simplify the equatio, instead of the Lie brackets in which they actually occur. The underlying geometry is the same as in the ``Summary PhD Thesis" and as such $A$ should be quotineted out by the group of gauge transformations. So, truly one should consider the process of equivalence classes which we denote by $X_t:=[A_t]$. Let us denote by the space on which $A$ takes values in by $\Omega$ (see \cite{CCHS2d} for precise definition). 
+
+We would like to prove global existence for $X$ by using rough Uhlenbeck compactness for any initial condition $A_0\in \Omega$. The idea here is to find a quantity $\Psi:\Omega\to\R_+$ satisfying (1) \textit{gauge-invariance:} $\Psi(A)=\Psi(B)$ for any $A\sim B$; (2) \textit{Uhlenbeck compactness:} there exists $B\sim A$ such that $|B|\leq \Psi(A)$; and (3) \textit{Lyapunov type-bound:} $t\mapsto \Psi(X_t)$ does not increase ``too fast". 
+%
+%on the equivalence classes such that $t\mapsto \Psi(X_t)$ does not increase too much and one can gauge fix in the sense that there exists $B_t\in X_t$ such that $|B_t|\leq \Psi(X_t)$. 
+%
+This allows us to restart the equation at any given point together with the slow increase of $t\mapsto \Psi(X_t)$ yields global existence for any initial condition for the Langevin dynamic. 
+
+The goal of this project is to develop new techniques to prove global well-posedness for SPDEs. Furthermore, extending this approach to Yang-Mills-Higgs Langevin dynamic could lead to a construction of the Yang-Mills-Higgs measure using stochastic quantisation as done in \cite{BC24_YM} in the Abelian case.
+
+
+
+%\section{Alternative proof for rough Uhlenbeck compactness in 2D}
+
+%Natural quantities, ... Langevin dynamic for example, from Dirac operators?, also helpful for 3D if one finds a suitable way, global existence for pure 2D YM etc, we use the structure of 2D, Broux-Otto-Steele techniques, or only Otto-et al ``energy'' technique
+
+
+%Alternative proof for rough Uhlenbeck compactness is not for the sake of the insane amount of possibilies to reporve the same result. It will teach us more on  singular SPDEs techniques,  rough differential geometry,and gauge invariant quantities.
+
+%The motivation for developing an alternative proof of rough Uhlenbeck compactness is not merely to replicate the result through numerous methods. Instead, this enhances our understanding of singular SPDE techniques, rough differential geometry, and gauge-invariant quantities. For example, one could try to prove using techniques relying on implicit function theorem as classically done in \cite{Uhlenbeck82} which is not currently available for singular SPDEs.
+%
+%(even though there is someone working on such thing \orange{Ref?}). 
+%
+%In fact, in the project \Cref{sec:RUC_square} from my PhD thesis, we developed several interesting techniques to reach this result, and I believe that redoing the proof could reveal even more valuable insights.
+
+%The gauge-invariant observable that we use is unfortunately not easily applicable for the Langevin dynamic. Changing the observable to a different quantity and reporving the same result could be more natural for the Langevin dynamic. One example could be the $L^p$-norm of the curvature smoothed by the Yang-Mills heat flow with some blow-up controlled suitably in the time parameter. Another one could be spectral quantities that can be obtained from Dirac operator $\rmD_A$, for example trace of the heat kernel. 
+
+%Further benefits for tweaking the result to accommodate the 2D Langeivn dynamic is that it could initiate proving pathwise global existence of the orbits under the dynamic as well as global existence for the non-Abelian Yang-Mills-Higgs. Furthermore,  it could enhance our understanding of the 3D Yang-Mills measure. For instance, the result that we currently have in \Cref{sec:RUC_square} using the axial gauge relation to lasso field which is very special property of 2 dimensions (in fact, we know even on $\bT^2$, we do not have such relation).  
+
+
+%\section{Extending regularity structures for boundary singularities}
+%In this project I am planning to extend some definitions in regularity structures \cite{Hairer14} to allow for singular objects arising because of boundary considerations. The main example that I have in mind is parabolic SPDEs where one cannot classically close the fixed point equation in the space of modelled distributions. This has occurred in \cite{CCHS3d} for example where the treatment was an additional Da-Prato Debussche step. Generally, if one has situations where one has a large amount of elements that require to be dealt with manually, say if one would consider a Langevin dynamic in a similar framework as  \cite{CM24}, then one needs a unifying technique to deal with such problems. 
+
+%Furthermore, inspiration arising from equations with spatial boundary, where the boundary values has some noise which has some correlations with interior noise. This has occured in the project of \Cref{sec:RUC_square}, where we had a particular technique to deal with. Later this could require a special version of \cite{CH16} to deal with these stochastic objects which could be a natural follow-up project. 
+
+%\section{Exploring rough Calderon problems}
+%This is a more exploratory project. Calderon type problems, or inverse problem already arises in the study of the operator $\rmD_A=\diff_A\oplus\diff_A^*$ from \Cref{sec:Dirac_2D}. One could try to obtain information of $A$ by studying $\rmD_A$, as well as stability results, i.e.\ some kind of continuity of the map $\rmD_A\mapsto A$. There is many results for operators of the form $\Delta+\zeta$ as well as recently for covariant Laplacian $\diff_A^*\diff_A$ and characterising up to gauge transformation \cite{Cekic20}. These questions are not precisely the same as the one I have mentioned, but it regardless poses the question: what happens when $\zeta$ is a 2D white noise, or $A$ is Gaussian free field on $\mathbb T^2$? Of course, there are issues: firstly the corresponding equations require singular SPDE technique, secondly boundary conditions, specifically, the Dirichlet-to-Neumann map, might require special effort to be understood. 
+
+
+
+
+%\section{Regularity structures incorporating initial data issues}
+%Also what about spatial boundaries? These could also cause similar issues, how to handle? We have a similar situation in RUC. 
+
+
+
+
+
+
+
+%\section{Revisiting Unsolved Problems}
+%During the first period of my PhD I have worked on several interesting problems that did not go anywhere. There are two of them which I want to revisit. 
+
+%Lasso fields played an important role in RUC. One could ask whether lasso fields are well-defined as distribution for elements in $C^{0^-}$ (namely the same regularity as GFF). For instance, it is not clear for the YM Langevin dynamic whether there is a way of making sense of the lasso fields in a pathwise manner. The question here, whether one can find a topology for which the GFF lives in, and one can canonically define the lasso field. What we know from pathwise techniques, is that one should aim to find an expansion in terms of stochastic objects, think of modelled distributions or germs. The issue that we have previously faced was that the expansion of the lasso field has functions of the lasso field in the expansion. Alternatively, one can write an equation in terms of two dimensional rough integration where the ``noise'' depends on the solution. Of course this is a bad sign. 
+
+%The new idea is to really use the fact that one already knows the lasso field in the smooth setting. One could hope for the smooth approximation to converge via smallness assumptions of the equantities involved. 
+
+%\section{Yang-Mills via curvature description}
+%The discrete Yang-Mills measure is defined through holonomy processes \cite{Levy03}. We know that the holonomy, connection form, and covariant derivative are all equivalent description of the same object (at least in the smooth setting). We already mentioned the discrete approximation in \Cref{sec:ext_Dirac}, so one might wonder how the discrete approximation in terms of the connection form would look like. That is the goal of this project. We consider a finite dimensional approximation of connection forms with finite dimensional gauge group acting on them such that the Yang-Mills measure as written in  \eqref{eq:YM_measure} makes sense on a quotient space. The idea is to prove that such measure converges as the approximation gets finer. 
+
+%The new methodology is based on the new enhanced understanding of the spaces on where the connection form lives in due to the works \cite{Chevyrev19,CCHS2d} as well as the extension I have in \Cref{sec:RUC_square}, and rough Uhlenbeck compactness. 
+
+
+%\section{Broader Impact and Applications}
+
+
+\subsection*{4\quad $\Phi^4_3$ with rough boundary conditions}
+This is a project Harprit Singh (University of Vienna) and I have been discussing. We consider parabolic $\Phi^4_3$ on the unit box $[0,1]^3$ where the boundary condition is distributed as restricted Gaussian free field. The issue is that one cannot classically close the fixed point equation as the boundary regularity will be too low. Such considerations have already occurred in my main PhD project (Rough Uhlenbeck Compactness) and with temporal boundary regularity in  \cite{CCHS3d,CM24}. I am planning to combine ideas from those works and my work to deal with this problem, possibly by extending some definitions in regulairty structures to allow for singular objects arising from boundary considerations. This problem is interesting as similar issues arise in understanding $\Phi^4_3$ measure conditioned on boundary data, e.g.\ in the study of domain Markov property.
+
+%The authors in there use $A$ being Gaussian free field, while in our case we want to sample from the gauge field marginal under the Yang-Mills measure which is slightly different. Important work in the study of gauge field marginal is \cite{CC24}. It would be important to extend such results to non-Abelian settings for the general case.   
+
+%The goal is to construct this measure in the Abelian case and later extend it to the non-Abelian setting. The way to rigorously construct this measure is by first taking a mollified/discrete $A^\varepsilon\to A$ and considering the measure $\mu_{A^\varepsilon}$ and show convergence (where we need to take $c_{A^\varepsilon}\to-\infty$). Once we have this measure we explore directions to construct the conditional Yang-Mills-Higgs measure.  
+
+%\section{Alternative proof for rough Uhlenbeck compactness in 2D}
+
+%Natural quantities, ... Langevin dynamic for example, from Dirac operators?, also helpful for 3D if one finds a suitable way, global existence for pure 2D YM etc, we use the structure of 2D, Broux-Otto-Steele techniques, or only Otto-et al ``energy'' technique
+
+
+%Alternative proof for rough Uhlenbeck compactness is not for the sake of the insane amount of possibilies to reporve the same result. It will teach us more on  singular SPDEs techniques,  rough differential geometry,and gauge invariant quantities.
+
+%The motivation for developing an alternative proof of rough Uhlenbeck compactness is not merely to replicate the result through numerous methods. Instead, this enhances our understanding of singular SPDE techniques, rough differential geometry, and gauge-invariant quantities. For example, one could try to prove using techniques relying on implicit function theorem as classically done in \cite{Uhlenbeck82} which is not currently available for singular SPDEs.
+%
+%(even though there is someone working on such thing \orange{Ref?}). 
+%
+%In fact, in the project \Cref{sec:RUC_square} from my PhD thesis, we developed several interesting techniques to reach this result, and I believe that redoing the proof could reveal even more valuable insights.
+
+%The gauge-invariant observable that we use is unfortunately not easily applicable for the Langevin dynamic. Changing the observable to a different quantity and reporving the same result could be more natural for the Langevin dynamic. One example could be the $L^p$-norm of the curvature smoothed by the Yang-Mills heat flow with some blow-up controlled suitably in the time parameter. Another one could be spectral quantities that can be obtained from Dirac operator $\rmD_A$, for example trace of the heat kernel. 
+
+%Further benefits for tweaking the result to accommodate the 2D Langeivn dynamic is that it could initiate proving pathwise global existence of the orbits under the dynamic as well as global existence for the non-Abelian Yang-Mills-Higgs. Furthermore,  it could enhance our understanding of the 3D Yang-Mills measure. For instance, the result that we currently have in \Cref{sec:RUC_square} using the axial gauge relation to lasso field which is very special property of 2 dimensions (in fact, we know even on $\bT^2$, we do not have such relation).  
+
+
+%\section{Extending regularity structures for boundary singularities}
+%In this project I am planning to extend some definitions in regularity structures \cite{Hairer14} to allow for singular objects arising because of boundary considerations. The main example that I have in mind is parabolic SPDEs where one cannot classically close the fixed point equation in the space of modelled distributions. This has occurred in \cite{CCHS3d} for example where the treatment was an additional Da-Prato Debussche step. Generally, if one has situations where one has a large amount of elements that require to be dealt with manually, say if one would consider a Langevin dynamic in a similar framework as  \cite{CM24}, then one needs a unifying technique to deal with such problems. 
+
+%Furthermore, inspiration arising from equations with spatial boundary, where the boundary values has some noise which has some correlations with interior noise. This has occured in the project of \Cref{sec:RUC_square}, where we had a particular technique to deal with. Later this could require a special version of \cite{CH16} to deal with these stochastic objects which could be a natural follow-up project. 
+
+%\section{Exploring rough Calderon problems}
+%This is a more exploratory project. Calderon type problems, or inverse problem already arises in the study of the operator $\rmD_A=\diff_A\oplus\diff_A^*$ from \Cref{sec:Dirac_2D}. One could try to obtain information of $A$ by studying $\rmD_A$, as well as stability results, i.e.\ some kind of continuity of the map $\rmD_A\mapsto A$. There is many results for operators of the form $\Delta+\zeta$ as well as recently for covariant Laplacian $\diff_A^*\diff_A$ and characterising up to gauge transformation \cite{Cekic20}. These questions are not precisely the same as the one I have mentioned, but it regardless poses the question: what happens when $\zeta$ is a 2D white noise, or $A$ is Gaussian free field on $\mathbb T^2$? Of course, there are issues: firstly the corresponding equations require singular SPDE technique, secondly boundary conditions, specifically, the Dirichlet-to-Neumann map, might require special effort to be understood. 
+
+
+
+
+%\section{Regularity structures incorporating initial data issues}
+%Also what about spatial boundaries? These could also cause similar issues, how to handle? We have a similar situation in RUC. 
+
+
+
+
+
+
+
+%\section{Revisiting Unsolved Problems}
+%During the first period of my PhD I have worked on several interesting problems that did not go anywhere. There are two of them which I want to revisit. 
+
+%Lasso fields played an important role in RUC. One could ask whether lasso fields are well-defined as distribution for elements in $C^{0^-}$ (namely the same regularity as GFF). For instance, it is not clear for the YM Langevin dynamic whether there is a way of making sense of the lasso fields in a pathwise manner. The question here, whether one can find a topology for which the GFF lives in, and one can canonically define the lasso field. What we know from pathwise techniques, is that one should aim to find an expansion in terms of stochastic objects, think of modelled distributions or germs. The issue that we have previously faced was that the expansion of the lasso field has functions of the lasso field in the expansion. Alternatively, one can write an equation in terms of two dimensional rough integration where the ``noise'' depends on the solution. Of course this is a bad sign. 
+
+%The new idea is to really use the fact that one already knows the lasso field in the smooth setting. One could hope for the smooth approximation to converge via smallness assumptions of the equantities involved. 
+
+%\section{Yang-Mills via curvature description}
+%The discrete Yang-Mills measure is defined through holonomy processes \cite{Levy03}. We know that the holonomy, connection form, and covariant derivative are all equivalent description of the same object (at least in the smooth setting). We already mentioned the discrete approximation in \Cref{sec:ext_Dirac}, so one might wonder how the discrete approximation in terms of the connection form would look like. That is the goal of this project. We consider a finite dimensional approximation of connection forms with finite dimensional gauge group acting on them such that the Yang-Mills measure as written in  \eqref{eq:YM_measure} makes sense on a quotient space. The idea is to prove that such measure converges as the approximation gets finer. 
+
+%The new methodology is based on the new enhanced understanding of the spaces on where the connection form lives in due to the works \cite{Chevyrev19,CCHS2d} as well as the extension I have in \Cref{sec:RUC_square}, and rough Uhlenbeck compactness. 
+
+
+%\section{Broader Impact and Applications}
+
+\subsection*{5\quad Continuation of operator approach to Yang-Mills theory}\label{sec:ext_Dirac}
+%
+There is a natural continuation of the program initiated in my second PhD project. I mention three things that I want to do next: (1) discrete approximation of covariant derivatives and a new definition of the discrete Yang-Mills measure, (2) extension to compact surfaces, and (3) extension to three-dimensional manifolds.  %These are all natural next steps of this approach and it is part of the broader program. 
+
+We elaborate on the last point (3). Extension to three dimensions would provide an alternative state space for the Yang-Mills Langevin dynamic as treated in \cite{CCHS3d} (of course as well as the measure). Combining the theory of covariant approach, we could strengthen some of the properties of the orbit space of the Langevin dynamic, e.g.\ proving Polishness which is still open.   
+
+
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}
